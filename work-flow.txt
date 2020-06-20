@@ -35,7 +35,8 @@
   time but during the quarantine when i started learning Techs. like NodeJs, ExpressJs i was totally
   messed up with lots of new terms and new errors and sometimes i invested all my day to learn that 
   new term or remove that bug and sometimes i realised that writing any statement was not my fault
-  But function have been updated now. So i decided to work on Helping-Verb.
+  But function have been updated now. So i decided to work on Helping-Verb so that upcoming geeks do
+  not waste their time on those nerdy bugs and can have good resource support.
 
 # Research 
   I really did an exhaustive research about how i will proceed to work on this project and what tech 
