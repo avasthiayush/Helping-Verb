@@ -11,10 +11,10 @@ let app=express();
 app.set('view engine','ejs');
 
 /*Access to static files.*/
-app.use(express.static('./Public'));
+app.use(express.static('./public'));
 
 /*Calling controller.*/
-app(homecontroller);
+homecontroller(app);
 
 /*Listening to server.*/
 app.listen(5500);

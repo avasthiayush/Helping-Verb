@@ -57,7 +57,3 @@
 
   # Till the date (20/06/2020) i know how to build responsive pages and i have medium level knowledge
     In backend.
-
-  -----------------------Work Flow-----------------------
-
-  
