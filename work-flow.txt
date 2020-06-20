@@ -1,0 +1,62 @@
+# Why Helping verb:
+
+  All of us knows that Competitive programming have a confined content to learn or 
+  confined errors to face and Competitive programming contents are barely updated 
+  Day by day. Like if u learned Dijkstra algorithm 3 years ago and coded that in 
+  c/c++ and u want to run same code on compiler today then eventually u will be able 
+  to do so because most of the updates in these launguages are about shortening your 
+  codes using stl and if u will not be able to do so then in most of the cases u will 
+  face four errors (WA,TLE,SIGSEGV,RUNTIME) and u already know why your compiler is throwing
+  these errors.
+  So at the end u generally needs three things to work on Competitive programming 
+  1.IDE(Easily available).
+  2.Content-DS and Algo(Easily available).
+  3.Practice.
+
+  Now lets have a look in developement. Development is not like as Competitive programming 
+  here errors are not in handy amount there are lots and lots of errors(sometimes u will not 
+  have any clue why u are facing those) and one more irritating thing is There are so 
+  many updates so if u are following any outdated tutorial then i am sure u r going to be 
+  screwd up with lots of errors sometime whole functions are going to be changed so there are
+  so many magics happen  in developement.
+  Lets look at the thing we need to work on development.
+  1.Editor(Setup needs a good tutorial).
+  2.Content(Lots of content is outdated).
+  3.Debugging(This step is too much irrtating and time taking for newbies sometimes whole day
+               for removing a single bug).
+
+  So by the help of Helping-Verb U can contact to your batchmates or seniors who have proficient 
+  knowledge in the Tech(Development) or Topic(CP) currently u are working on and ask them to provide 
+  some good Updated resources and can ask for few pro tips. 
+
+
+# IDEA 
+  Helping-Verb was my idea since starting of My second Year but I didnt gave a value to that at that 
+  time but during the quarantine when i started learning Techs. like NodeJs, ExpressJs i was totally
+  messed up with lots of new terms and new errors and sometimes i invested all my day to learn that 
+  new term or remove that bug and sometimes i realised that writing any statement was not my fault
+  But function have been updated now. So i decided to work on Helping-Verb.
+
+# Research 
+  I really did an exhaustive research about how i will proceed to work on this project and what tech 
+  should i learn for completing this project.
+
+# Today-(20/06/2020) I am starting this project i dont know wheather i will be able to complete this 
+  But even if i will go to half of the road i mapped to go. I will be happy cause i worked on my idea.
+
+# Coding/Development
+  I am solely not supporting any indivisual but in my opinion for the 1st year you should do CP in decent 
+  way and learn git/basic web developement/github and in second year do both in a balance manner so that
+  one should not have to face lack of time because of other.
+  For me:
+  1. Coding gives me internal happiness.
+  2. Development get to realise me i am develping something Usable,Productive,Worthy in Real time.
+  So i like both Coding and Development. 
+
+
+  # Till the date (20/06/2020) i know how to build responsive pages and i have medium level knowledge
+    In backend.
+
+  -----------------------Work Flow-----------------------
+
+  
