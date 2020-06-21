@@ -1,0 +1,134 @@
+body, ul, li, h1, h2, a
+{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+}
+body 
+{
+    background-color: #1a1a1d;
+}
+header 
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    z-index: 1;
+    background-color: #1a1a1d;
+    padding:12px;
+}
+nav ul 
+{
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+nav li
+{
+    width: 20%;
+    display: inline-block;
+    font-size: 20px;
+}
+nav li a
+{
+    text-decoration: none;
+    color:yellow;
+}
+nav li a:hover
+{
+    text-decoration: underline;
+    color:#c3073f;
+}
+.banner 
+{
+    position:relative;
+}
+.banner img 
+{
+    max-width: 100%;
+}
+.banner .welcome{
+    background:#1a1a1d;
+    color:yellow;
+    padding: 30px;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 30%;
+  } 
+  .banner .welcome span{
+    font-size: 1.4em;
+  }
+  .banner .welcome:hover
+  {
+    color:#c3073f;
+  }
+
+#name
+{
+    color:yellow;
+}
+
+   footer{
+    background:#1a1a1d;
+    color:#c3073f;
+    padding: 10px;
+  }
+
+  #crafter 
+  {
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #crafter  #li1,#li2{
+    width: 50%;
+    display: inline-block;
+    font-size: 25px;
+  }
+  #with 
+  {
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #with li
+  {
+    width: 25%;
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  .upperf 
+  {
+    padding:7px;
+    width:100%
+  }
+  .lfooter 
+  {
+    width:40%;
+    float:left;
+    margin:5%;
+  }
+  .rfooter
+  {
+    width:40%;
+    float:left;
+    margin:5%;
+  }
+  .lfooter ul 
+  {
+    
+  }
+  #copy {
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;;
+    color:yellow;
+  }
+  #copy:hover{
+    color:#c3073f;
+  }

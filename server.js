@@ -17,7 +17,7 @@ app.use(express.static('./public'));
 homecontroller(app);
 
 /*Listening to server.*/
-app.listen(5500);
+app.listen(3000);
 
 /*Confirmation of Listening to server.*/
-console.log("You are listening to port:5500");
+console.log("You are listening to port:3000");
