@@ -15,7 +15,7 @@ app.use(express.static('./public'));
 
 /*Calling controller.*/
 homecontroller(app);
-
+ 
 /*Listening to server.*/
 app.listen(3000);
 

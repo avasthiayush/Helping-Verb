@@ -58,52 +58,11 @@ nav li a:hover{
   
   main {
     background-color: #1a1a1d;
-    padding:60px;
   }
   
-  .profile{
-    padding:10px;
-    padding-bottom:20px;
-    color:yellow;
-    text-align: center;
-    font-size: 55px;
-  }
-  .profile span{
-    text-decoration: underline;
-  }
-  .profile span:hover{
-    color:#c3073f;
-    text-decoration: none;
-  }
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-  }
-  
-  button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color:yellow;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  button:hover, a:hover {
-    opacity: 0.7;
-  }
-  
-
    footer{
-    background:#000;
+    background:#1a1a1d;
     padding: 10px;
-    padding-top:25px;
    }
     ul {
       list-style: none;
