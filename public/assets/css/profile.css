@@ -1,156 +1,130 @@
 body, ul, li, h1, h2, a{
-    margin: 0;
-    padding: 0;
-    font-family: tahoma;
+  margin: 0;
+  padding: 0;
+  font-family: tahoma;
 }
 body {
-    background-color: #1a1a1d;
+  background-color: #1a1a1d;
 }
 .header{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width:100%;
-    margin-bottom: 50px;
-    z-index: 1;
-    background-color: #1a1a1d;
-    padding:12px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  margin-bottom: 50px;
+  z-index: 1;
+  background-color: #1a1a1d;
+  padding:12px;
 }
 nav ul {
-  white-space: nowrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
+white-space: nowrap;
+max-width: 1200px;
+margin: 0 auto;
+text-align: center;
 }
 nav li{
-    width: 20%;
-    display: inline-block;
-    font-size: 20px;
+  width: 20%;
+  display: inline-block;
+  font-size: 20px;
 }
 nav li a{
-    text-decoration: none;
-    color:yellow;
+  text-decoration: none;
+  color:yellow;
 }
 nav li a:hover{
-    text-decoration: underline;
-    color:#c3073f;
+  text-decoration: underline;
+  color:#c3073f;
 }
-.banner {
-    position:relative;
+
+.main0{
+  background-color: #c3073f;
 }
-.banner img {
-    max-width: 100%;
+.welcome{
+  font-size: 50px;
+  padding:80px;
+  padding-top:100px;
+  padding-bottom:60px;
+  text-align: center;
+  color:yellow;
 }
-.banner .welcome{
-    background:#1a1a1d;
-    color:yellow;
-    padding: 30px;
-    font-size: 20px;
-    position: absolute;
-    left: 0;
-    top: 30%;
-  } 
-  .banner .welcome span{
-    font-size: 1.4em;
-  }
-  .banner .welcome:hover{
-    color:#c3073f;
-  }
-  .main{
-    background-color: #c3073f;
-  }
-  .welcome{
-    font-size: 50px;
-    padding:80px;
-    padding-top:100px;
-    text-align: center;
-    color:yellow;
-  }
-  
-  
-   footer{
-    background:#1a1a1d;
-    padding: 10px;
-    padding-top:2px;
-    padding-bottom: 7px;
-   }
-    ul {
-      list-style: none;
-   }
-   li{
-      color:grey;
-   }
-   #foot2{
-     text-align: right;
-   }
-   #left{
-     padding-right:80px;
-   }
-   .foot3 { 
-     text-align: center;
-     color:grey;
-     padding:2px;
-   }
-   #copy {
-     color:yellow;
-   }
 
+ * {
+  box-sizing: border-box;
+}
 
-   * {
-    box-sizing: border-box;
-  }
-  
-  /* Style the search field */
-  form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    margin-left: 15%;
-    float: left;
-    width: 60%;
-    background: #f1f1f1;
-  }
-  
-  /* Style the submit button */
-  .forma{
-    text-align: center;
-    padding:10px;
-    padding-left:40px;
-    margin-bottom: 20px;
-  }
-  form.example button {
-    float: left;
-    width: 10%;
-    padding: 10px;
-    background: #1a1a1d;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
-  }
-  
-  form.example button:hover {
-    background: #1a1a1d;
-  }
-  
-  /* Clear floats */
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  .container 
-  {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-  }
-  
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  margin-left: 15%;
+  float: left;
+  width: 60%;
+  background: #f1f1f1;
+}
 
-  
+/* Style the submit button */
+.forma{
+  text-align: center;
+  padding:10px;
+  padding-left:40px;
+  margin-bottom: 60px;
+}
+form.example button {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  background: #1a1a1d;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #1a1a1d;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+/*footer.*/
+footer{
+  background:#000;
+  padding: 10px;
+  padding-bottom: 4px;
+ }
+  ul {
+    list-style: none;
+ }
+ li{
+    color:grey;
+ }
+ #foot2{
+   text-align: right;
+ }
+ #left{
+   padding-right:80px;
+ }
+
+ .foot3 {
+   text-align: center;
+   color:grey;
+   padding:10px;
+   padding-top:3px;
+ }
+ #copy {
+   color:yellow;
+ }
+ /*footer ends here.*/

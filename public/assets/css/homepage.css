@@ -6,6 +6,7 @@ body, ul, li, h1, h2, a{
 body {
     background-color: #1a1a1d;
 }
+/*header style.*/
 header{
     position: fixed;
     top: 0px;
@@ -34,6 +35,9 @@ nav li a:hover{
     text-decoration: underline;
     color:#c3073f;
 }
+/*header style ends here.*/
+
+/*poster style.*/
 .banner {
     position:relative;
 }
@@ -55,15 +59,18 @@ nav li a:hover{
   .banner .welcome:hover{
     color:#c3073f;
   }
-  
+  /*poster style ends here.*/
+
+  /*main content.*/
   main {
     background-color: #1a1a1d;
     padding:60px;
+    padding-top:40px;
   }
   
   .profile{
     padding:10px;
-    padding-bottom:20px;
+    padding-bottom:40px;
     color:yellow;
     text-align: center;
     font-size: 55px;
@@ -76,7 +83,6 @@ nav li a:hover{
     text-decoration: none;
   }
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
     text-align: center;
@@ -99,11 +105,13 @@ nav li a:hover{
     opacity: 0.7;
   }
   
+  /*main content ends here.*/
 
+  /*footer.*/
    footer{
     background:#000;
-    padding: 10px;
-    padding-top:25px;
+    padding: 9px;
+    padding-bottom: 4px;
    }
     ul {
       list-style: none;
@@ -121,7 +129,9 @@ nav li a:hover{
      text-align: center;
      color:grey;
      padding:10px;
+     padding-top:3px;
    }
    #copy {
      color:yellow;
    }
+   /*footer ends here.*/
