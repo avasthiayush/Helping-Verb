@@ -6,11 +6,12 @@ body, ul, li, h1, h2, a{
 body {
     background-color: #1a1a1d;
 }
-header{
+.header{
     position: fixed;
     top: 0px;
     left: 0px;
     width:100%;
+    margin-bottom: 50px;
     z-index: 1;
     background-color: #1a1a1d;
     padding:12px;
@@ -55,14 +56,23 @@ nav li a:hover{
   .banner .welcome:hover{
     color:#c3073f;
   }
-  
-  main {
-    background-color: #1a1a1d;
+  .main{
+    background-color: #c3073f;
   }
+  .welcome{
+    font-size: 50px;
+    padding:80px;
+    padding-top:100px;
+    text-align: center;
+    color:yellow;
+  }
+  
   
    footer{
     background:#1a1a1d;
     padding: 10px;
+    padding-top:2px;
+    padding-bottom: 7px;
    }
     ul {
       list-style: none;
@@ -76,11 +86,71 @@ nav li a:hover{
    #left{
      padding-right:80px;
    }
-   .foot3 {
+   .foot3 { 
      text-align: center;
      color:grey;
-     padding:10px;
+     padding:2px;
    }
    #copy {
      color:yellow;
    }
+
+
+   * {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    margin-left: 15%;
+    float: left;
+    width: 60%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  .forma{
+    text-align: center;
+    padding:10px;
+    padding-left:40px;
+    margin-bottom: 20px;
+  }
+  form.example button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #1a1a1d;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #1a1a1d;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .container 
+  {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+
+  
