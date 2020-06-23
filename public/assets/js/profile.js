@@ -22,4 +22,7 @@ $( function() {
     $("#tags").autocomplete({
       source: skills
     });
-  } );
+  });
+  AOS.init({
+    duration: 1200,
+  });

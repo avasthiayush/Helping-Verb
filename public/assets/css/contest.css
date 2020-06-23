@@ -37,7 +37,7 @@ nav li a:hover{
 }
 /*header style ends here.*/
 .maindiv{
-  background-color: #c3073f;
+  background-color: #283747;
   padding-top: 100px;
   padding-bottom: 70px;
 }
@@ -47,11 +47,56 @@ nav li a:hover{
 .contest{
   padding-top:10px;
   padding-bottom: 10px;
-  color:yellow;
+  color:#F7DC6F;
   font-size: 20px;
   text-align: center;
 }
+.Add{
+  color:#F7DC6F;
+  font-size: 40px;
+  text-align: center;
+  padding:10px;
+}
+*:focus {outline:none !important}
+.forma{
+  padding:20px;
+  text-align: center;
+}
 
+#cn,#cu,#gi,#cd,#bn{
+  width:30%;
+  padding:10px;
+
+}
+#cd{
+  padding:10px;
+  border: 2px solid #eee;
+  margin:10px 0; 
+  border-radius:20px;
+  font-family:inherit;
+  font-size: 20px;
+  color:grey;
+}
+input[type=text], input[type=password],input[type=button]{
+  padding:10px;
+  border: 2px solid #eee;
+  margin:10px 0; 
+  border-radius:20px;
+  font-family:inherit;
+  font-size: 20px;
+}
+#bn{
+  color:grey;
+  background-color: #283747;
+}
+#bn:hover{
+  color:grey;
+  background-color: #F7DC6F;
+}
+.dabba{
+  margin-top: 25px;
+   margin-bottom: 25px;
+}
 .seconddiv{
   padding:auto ;
   text-align: center;
@@ -59,15 +104,16 @@ nav li a:hover{
 .geeks{
   text-align: center;
   font-size: 30px;
-  color:yellow;
+  color:#F7DC6F;
 }
 .spn{
   font-size:30px;
-  color:yellow;
+  color:#c3073f;
 }
 .heading{
-  background-color: #c3073f; 
-  color: yellow;
+  color:grey;
+  background-color:#F7DC6F;
+  font-size: 30px;
   display: inline-block;
 }
 .unl{
