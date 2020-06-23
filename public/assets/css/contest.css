@@ -7,7 +7,7 @@ body {
   background-color: #1a1a1d;
 }
 /*header style.*/
-header{
+.header{
   position: fixed;
   top: 0px;
   left: 0px;
@@ -36,19 +36,42 @@ nav li a:hover{
   color:#c3073f;
 }
 /*header style ends here.*/
-main{
-  padding-top:100px;
-  padding-bottom: 50px;
+.maindiv{
+  background-color: #c3073f;
+  padding-top: 100px;
+  padding-bottom: 70px;
 }
-.H1{
+.firstdiv{
   text-align: center;
-  padding:10px;
-  color:grey;
 }
-.P1{
+.contest{
+  padding-top:10px;
+  padding-bottom: 10px;
+  color:yellow;
+  font-size: 20px;
   text-align: center;
-  padding: 10px;
-  color:grey;
+}
+
+.seconddiv{
+  padding:auto ;
+  text-align: center;
+}
+.geeks{
+  text-align: center;
+  font-size: 30px;
+  color:yellow;
+}
+.spn{
+  font-size:30px;
+  color:yellow;
+}
+.heading{
+  background-color: #c3073f; 
+  color: yellow;
+  display: inline-block;
+}
+.unl{
+  border: 2px,bold,yellow;
 }
 /*footer.*/
  footer{
