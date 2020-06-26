@@ -1,7 +1,6 @@
 body, ul, li, h1, h2, a{
   margin: 0;
   padding: 0;
-  font-family: tahoma;
 } 
 /*body style.*/
 body {
@@ -13,20 +12,21 @@ body {
 .navbar-nav > li{
 padding-left:30px;
 padding-right:30px;
-margin-left:9%;
-margin-right:9%;
+margin-left:14%;
+margin-right:14%;
 font-size: 22px;
 font-family: 'Pangolin', cursive;
 }
 .navbar-nav .nav-item .nav-link {
 color:yellow;
+text-align: center;
 }
-.custom-toggler.navbar-toggler { 
-  border-color: yellow;
-  color:white;
+.custom-toggler.navbar-toggler {  
+border-color: yellow;
+color:white;
 } 
 .custom-toggler .navbar-toggler-icon { 
-  background-image: url( 
+background-image: url( 
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
 } 
 .navbar-custom { 
@@ -40,15 +40,15 @@ color: #e4255e;
 
 /*main content*/
 .maindiv{
-  background-color: #283747;
-  padding-top: 100px;
+  background-color: #303031;
+  padding-top: 60px;
   padding-bottom: 70px;
 }
 .firstdiv{
   text-align: center;
 }
 .contest{
-  padding-top:10px;
+  padding-top:10px; 
   padding-bottom: 10px;
   color:#F7DC6F;
   font-size: 20px;
@@ -67,8 +67,8 @@ color: #e4255e;
 }
 
 #cn,#cu,#gi,#cd,#bn{
-  width:30%;
-  padding:10px; 
+  width:36%;
+  padding:10px;  
 
 }
 .contest p{
@@ -85,16 +85,8 @@ color: #e4255e;
   color:grey;
 }
 .card img{
-  height:200px;
-  width:200px;
-}
-.card h1{
-  color:yellow;
-  font-size: 40px;
-  background-color:#697e94;
-}
-.card h1:hover{
-  color:#c3073f;;
+  height:170px;
+  width:170px;
 }
 input[type=text], input[type=password],input[type=button]{
   padding:10px;
@@ -143,6 +135,17 @@ input[type=text], input[type=password],input[type=button]{
   border: 2px,bold,yellow;
   list-style: none;
 }
+.card .card1{
+  text-decoration: none;
+  font-size: 25px;
+  padding:10px;
+  background-color: #1a1a1d;
+  color: #F7DC6F;
+}
+.card .card1:hover{
+  color: #c3073f;
+}
+
 .unl li{
   border:2px ,bold,red;
   margin-top: 2px;

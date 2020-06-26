@@ -1,11 +1,10 @@
 body, ul, li, h1, h2, a{
   margin: 0;
   padding: 0;
-  font-family: tahoma;
 } 
 /*body style.*/
-body { 
-  background-color: #1a1a1d;
+body {
+  background-color: #303031;
   font-family: 'Pangolin', cursive;
 }
 
@@ -13,20 +12,21 @@ body {
 .navbar-nav > li{
 padding-left:30px;
 padding-right:30px;
-margin-left:9%;
-margin-right:9%;
+margin-left:14%;
+margin-right:14%;
 font-size: 22px;
 font-family: 'Pangolin', cursive;
 }
 .navbar-nav .nav-item .nav-link {
 color:yellow;
+text-align: center;
 }
-.custom-toggler.navbar-toggler { 
-  border-color: yellow;
-  color:white;
+.custom-toggler.navbar-toggler {  
+border-color: yellow;
+color:white;
 } 
 .custom-toggler .navbar-toggler-icon { 
-  background-image: url( 
+background-image: url( 
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
 } 
 .navbar-custom { 
@@ -44,32 +44,62 @@ color: #e4255e;
   max-width: 100%;
 }
 .banner .welcome{
-  background:rgb(100, 91, 91);
+  background:rgb(129, 124, 124);
   color:yellow;
   padding: 60px;
   position: absolute;
   left: 60%;
-  top: 15%;
+  top: 18%;
 } 
 .banner .welcome h2{
   font-size: 60px;
 }
-.banner .welcome:hover{
+.banner .welcome h2:hover{
   color:#c3073f;
+  cursor: pointer;
 }
 main{
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 h2,h4{
   color:#F7DC6F;
+  font-size: 30px; 
+}
+p{
+  font-size: 20px;
+}
+.req li{
+   font-size:20px;
+}
+.icons{
+  position: relative;
+  margin-top:10px;
+}
+.icons .fa{
+  width:50px;
+  height: 50px;
+  padding:15px;
+  background: #fff;
+  border-radius:50%;
+  text-align: center;
+  color:grey;
+  font-size: 20px;
+}
+.icons .fa:hover{
+  background: yellow;
+  color:#c3073f;
+  transition: 0.5%;
+  cursor: pointer;
 }
  .aboutme{
   text-align: center;
   padding:20px;
   color:grey;
-  margin:10px 15%;
+  margin:16px 15%;
   border:2px solid #F7DC6F; 
   border-radius: 25px;
+  background-color: #283747;
 }
 .abouthv{
   text-align: center;
@@ -78,14 +108,16 @@ h2,h4{
   margin:10px 15%;
   border:2px solid #F7DC6F; 
   border-radius: 25px;
+  background-color: #283747;
 }
 .req{
-  text-align: center;
+  text-align: center; 
   padding:20px;
   color:grey;
-  margin:10px 15%;
+  margin:16px 15%;
   border:2px solid #F7DC6F; 
   border-radius: 25px;
+  background-color: #283747;
 }
 .req ul{
   list-style: none;
@@ -93,9 +125,10 @@ h2,h4{
 .sugg{
   text-align: center;
   padding: 20px;
-  margin:10px 15%;
+  margin:16px 15%;
   border:2px solid #F7DC6F; 
   border-radius: 25px;
+   background-color: #283747;
 }
 #back2Top {
   width: 35px;
