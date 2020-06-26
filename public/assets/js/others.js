@@ -1,7 +1,4 @@
-AOS.init({
-    duration: 1200,
-  });
-  $(window).scroll(function() {
+$(window).scroll(function() {
     var height = $(window).scrollTop();
     if (height > 100) {
         $('#back2Top').fadeIn();

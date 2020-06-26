@@ -22,6 +22,14 @@ font-family: 'Pangolin', cursive;
 .navbar-nav .nav-item .nav-link {
 color:yellow;
 }
+.custom-toggler.navbar-toggler { 
+  border-color: yellow;
+  color:white;
+} 
+.custom-toggler .navbar-toggler-icon { 
+  background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
 .navbar-custom { 
   background-color: #000; 
 } 
@@ -94,6 +102,31 @@ form.example::after {
   max-width: 300px;
   margin: auto;
   text-align: center;
+}
+#back2Top {
+  width: 35px;
+  line-height: 35px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  background-color: yellow;
+  color: #555;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+#back2Top:hover {
+  background-color: #c3073f;
+  color: #000;
 }
 /*main style ends here*/
 

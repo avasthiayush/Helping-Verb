@@ -32,23 +32,23 @@
     footer .fid{
       font-family: 'Pangolin', cursive;
     }
-
+    
     </style>
     
 </head>
 <body>
     <!-- Header -->
       <nav class="navbar navbar-expand-lg  navbar-custom">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon my-toggler"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto" >
+           <ul class="navbar-nav mr-auto" >
+            <li class="nav-item">
+              <a class="nav-link" href="">HV</a>
+            </li>
             <li class="nav-item" >
               <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./profile">Profiles</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./contest">Contest</a>
@@ -77,7 +77,7 @@
     <!-- Main  -->
     <main>
       <div class="profile" >
-        <span data-aos="fade-up">Profiles</span>
+        <span data-aos="fade-up" id="bottom">Profiles</span>
       </div>
       <div class="container">
         <div class="row" data-aos="fade-up">
@@ -121,7 +121,7 @@
       </div>
     </main> 
     <!-- Main Ends-->
-
+    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
     <!-- Footer -->
     <footer>
       <div>

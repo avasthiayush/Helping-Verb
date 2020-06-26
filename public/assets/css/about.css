@@ -21,6 +21,14 @@ font-family: 'Pangolin', cursive;
 .navbar-nav .nav-item .nav-link {
 color:yellow;
 }
+.custom-toggler.navbar-toggler { 
+  border-color: yellow;
+  color:white;
+} 
+.custom-toggler .navbar-toggler-icon { 
+  background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
 .navbar-custom { 
   background-color: #000; 
 } 
@@ -29,23 +37,91 @@ color:yellow;
 color: #e4255e;
 }
 /*header style ends here.*/
-
+.banner {
+  position:relative;
+}
+.banner img {
+  max-width: 100%;
+}
+.banner .welcome{
+  background:rgb(100, 91, 91);
+  color:yellow;
+  padding: 60px;
+  position: absolute;
+  left: 60%;
+  top: 15%;
+} 
+.banner .welcome h2{
+  font-size: 60px;
+}
+.banner .welcome:hover{
+  color:#c3073f;
+}
 main{
-  padding-top:100px;
-  padding-bottom: 50px;
-  background-color: #283747;
+  margin-top: 20px;
 }
-.H1{
-  text-align: center;
-  padding:10px;
-  color:grey; 
+h2,h4{
+  color:#F7DC6F;
 }
-.P1{
+ .aboutme{
   text-align: center;
-  padding: 10px;
+  padding:20px;
   color:grey;
+  margin:10px 15%;
+  border:2px solid #F7DC6F; 
+  border-radius: 25px;
 }
-
+.abouthv{
+  text-align: center;
+  padding:20px;
+  color:grey;
+  margin:10px 15%;
+  border:2px solid #F7DC6F; 
+  border-radius: 25px;
+}
+.req{
+  text-align: center;
+  padding:20px;
+  color:grey;
+  margin:10px 15%;
+  border:2px solid #F7DC6F; 
+  border-radius: 25px;
+}
+.req ul{
+  list-style: none;
+}
+.sugg{
+  text-align: center;
+  padding: 20px;
+  margin:10px 15%;
+  border:2px solid #F7DC6F; 
+  border-radius: 25px;
+}
+#back2Top {
+  width: 35px;
+  line-height: 35px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  background-color: yellow;
+  color: #555;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+#back2Top:hover {
+  background-color: grey;
+  color: #000;
+}
 /*footer.*/
  footer{
   background:#000;
@@ -54,6 +130,10 @@ main{
   font-size: 17px;
   text-align: center;
   color:grey;
+ }
+ p,ul{
+   margin-top: 10px;
+   margin-bottom: 5px;
  }
  .fid{
    padding:6px;
