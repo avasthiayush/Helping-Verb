@@ -3,9 +3,9 @@
 <head>
     <title>Helping-Verb</title>
     <!-- External CSS and Scripts -->
-    <link rel="stylesheet" href="/assets/css/profile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
@@ -14,33 +14,64 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/assets/css/profile.css">
     <!-- External CSS and Scripts -->
+    <style>
+      body{
+      font-family: 'Pangolin', cursive;
+    }
+    header a{
+      font-family: 'Pangolin', cursive;
+    }
+    .banner h2{
+      font-family: 'Pangolin', cursive;
+    }
+    main h1{
+      font-family: 'Pangolin', cursive;
+    }
+    footer .fid{
+      font-family: 'Pangolin', cursive;
+    }
+
+    </style>
+    
 </head>
 <body>
     <!-- Header -->
-    <div class="header">
-        <nav>
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Profiles</a></li>
-                <li><a href=""><img src="/assets/img/logo16.png" alt="logo"></a></li>
-                <li><a href="">Contests</a></li>
-                <li><a href="">Avatar</a></li>
-            </ul>
-        </nav>
-    </div>
+      <nav class="navbar navbar-expand-lg navbar-custom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto" >
+            <li class="nav-item" >
+              <a class="nav-link" href="./homepage">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profiles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contest">Contest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./avatar">Avatar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./about">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     <!-- Header End-->
+
+    <!-- Main content -->
     <div class="main0">
     <div class="welcome">
         <span>Welcome to the Arena</span>
     </div>
     <div class="forma">
         <form class="example" action="">
-            <input type="text" placeholder="Search by Skill..." name="search" id="tags">
+            <input type="text" placeholder="Search by Skills:cpp nodejs reactjs html css mongodb etc." name="search" id="tags">
             <button type="submit"><i class="fa fa-search" style="color:yellow"></i></button>
         </form>
     </div>
@@ -58,7 +89,7 @@
             </div>
             <div class="col-md-3">
                 <div class="card">
-                <img src="/assets/img/1st.jpeg" alt="2nd" style="width:100%">
+                <img src="/assets/img/1st.png" alt="2nd" style="width:100%">
                 <h1>Speci</h1>
                 <p>Lorem epsum</p>
                 
@@ -74,7 +105,7 @@
             </div>
             <div class="col-md-3">
                 <div class="card">
-                <img src="/assets/img/1st.jpeg" alt="Final" style="width:100%">
+                <img src="/assets/img/1st.png" alt="Final" style="width:100%">
                 <h1>Masters</h1>
                 <p>Lrem epsum</p>
                 
@@ -96,7 +127,7 @@
             </div>
             <div class="col-md-3">
                 <div class="card">
-                <img src="/assets/img/1st.jpeg" alt="2nd" style="width:100%">
+                <img src="/assets/img/1st.png" alt="2nd" style="width:100%">
                 <h1>Speci</h1>
                 <p>Lorem epsum</p>
                 
@@ -112,7 +143,7 @@
             </div>
             <div class="col-md-3">
                 <div class="card">
-                <img src="/assets/img/1st.jpeg" alt="Final" style="width:100%">
+                <img src="/assets/img/1st.png" alt="Final" style="width:100%">
                 <h1>Masters</h1>
                 <p>Lrem epsum</p>
                 
@@ -134,7 +165,7 @@
             </div>
             <div class="col-md-3">
                 <div class="card">
-                <img src="/assets/img/1st.jpeg" alt="2nd" style="width:100%">
+                <img src="/assets/img/1st.png" alt="2nd" style="width:100%">
                 <h1>Speci</h1>
                 <p>Lorem epsum</p>
                 
@@ -150,7 +181,7 @@
             </div>
             <div class="col-md-3">
                 <div class="card">
-                <img src="/assets/img/1st.jpeg" alt="Final" style="width:100%">
+                <img src="/assets/img/1st.png" alt="Final" style="width:100%">
                 <h1>Masters</h1>
                 <p>Lrem epsum</p>
                 
@@ -159,40 +190,22 @@
             </div>
         </div>
     </div>
+    <!-- Main content Ends here -->
     <hr style="background-color:white; margin-left: 60px; margin-right: 60px;">
     <!-- Footer -->
     <footer>
-        <div class="container" class="container1">
-            <div class="row">
-                <div class="col" id="foot1">
-                <ul>
-                    <li>
-                       <span>Crafted By: Anonymous Developer</span>
-                    </li>
-                    <li>
-                        Crafted with : <i class="fa fa-code" style="font-size:14px;color:yellow;"></i> + <i class="fa fa-heart" style="font-size:14px;color:yellow;"></i> <span>+</span> <i class="fa fa-coffee" style="font-size:14px;color:yellow;"></i>
-                    </li>
-                </ul>
-                </div>
-                <div class="col" id="foot2">
-                    <ul>
-                      <li>
-                        Let's Exchange Few Thoughts.
-                      </li>
-                      <li id="left">
-                        <a href=""><i class="fa fa-linkedin" style="font-size:14px;color:yellow;"></i></a> <span></span> <a href=""><i class="fa fa-facebook" style="font-size:14px;color:yellow;"></i></a> <a href=""><i class="fa fa-instagram" style="font-size:14px;color:yellow;"></i></a> 
-                      </li>
-                    </ul>
-                </div>
-            </div>
+        <div>
+          <ul>
+            <li class="fid">
+              Crafted with <i class="fa fa-code" style="font-size:14px;color:yellow;"></i> + </span> <i class="fa fa-coffee" style="font-size:14px;color:yellow;"></i> and <i class="fa fa-heart" style="font-size:14px;color:yellow;"></i> <span> By Anonymous Developer
+            </li>
+            <li class="fid">
+              <span id="copy">&copy;</span><span> Copyright <span style="color:yellow;">2020 </span>Helping-Verb</span>
+            </li>
+          </ul>
         </div>
-        <div class="foot3">
-            <span id="copy">&copy;</span><span> Copyright 2020 Helping-Verb</span>
-        </div>
-    </footer>
-    <!-- Footer Ends-->
+      </footer>
+      <!-- Footer Ends-->
     <script src="/assets/js/profile.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 </html>

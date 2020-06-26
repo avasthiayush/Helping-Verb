@@ -14,7 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/avatar.css">
     <!-- External CSS and Scripts -->
     <style>
       body{
@@ -54,79 +54,74 @@
                 <a class="nav-link" href="./contest">Contest</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./avatar">Avatar</a>
+              <a class="nav-link" href="#">Avatar</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="./about">About</a>
             </li>
           </ul>
         </div>
       </nav>
     <!-- Header End-->
-    
     <main>
-        <div class="about">
-           <div class="H1"> 
-               <h1>About Me</h1>
-           </div>
-           <div class="P1">
-              <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate similique ipsam eius facilis at non cum molestiae, necessitatibus aliquam enim voluptatem, eaque ipsa officiis nihil quae minima voluptatibus, vel deleniti.
-              </p>
-           </div>
+        <div class="addprofile">
+        <h1>You can add Your Profile in arena in two steps.</h1>
+        <div class="s1">
+            <h3>Step:1</h3>
+            <p>Create a Arena ID that will be your unique identity at Helping-Verb<br>
+            Its kind of password for you.</p>
+            <h4>Check here wheather your Arena ID is unique or not.</h4>
+            <form action="">
+                <input type="password" placeholder="Enter your Arena ID." class="in">
+                <input type="button" value="check" class="bn">
+            </form>
         </div>
-        <div class="idea">
-           <div class="H1">
-               <h1>Idea behind Helping Verb.</h1>
-           </div>
-           <div class="P1">
-              <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi vel enim deserunt consequuntur esse. Cumque sunt odio iste impedit? Sapiente saepe accusantium temporibus maiores facilis illum cumque quidem libero quae!
-              </p>
-           </div>
+        <div class="s2">
+            <h3>Step:2</h3>
+            <p>Fill this google form we will add your profile after filling google form.<br>
+            We will add profile manually in Initial days for security reasons after that<br>
+            we may come up with feature like one to one verification.</p>
+            <a href="">Add Your Profile.</a>
         </div>
-        <div class="fr">
-           <div class="H1">
-               <h1>Features</h1>
-           </div>
-           <div class="P1">
-              <ul>
-                  <li>
-                      hilkjh
-                  </li>
-                  <li>
-                      jjhsdjh
-                  </li>
-                  <li>
-                      adhsHJSD
-                  </li>
-              </ul>
-           </div>
         </div>
-        <div class="rst">
-           <div class="H1">
-              <h1> Request to Users</h1>
-           </div>
-           <div class="P1">
-             <p>
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, dolorem consequuntur totam pariatur rem iste obcaecati eius hic error vel tempora ea, fugiat aperiam! Id et debitis beatae repudiandae modi.
-             </p>
-           </div>
-        </div>
-        <div class="sugg" data-aos="fade-up">
-            <div class="H1">
-                <h1>Any query of suggestion</h1>
+        <div class="editprofile">
+            <h1>You can edit You Arena Profile here.</h1>
+            <div class="editgeneral">
+             <h3>Edit General informations.</h3>
+             <form action="">
+                 <label for="name">Name:</label>
+                 <input type="text" placeholder="name" class="in"><br>
+                 <label for="glink">Github profile link:</label>
+                 <input type="text" placeholder="github id link" class="in"><br>
+                 <label for="llink">Linkedin profile link:</label>
+                 <input type="text" placeholder="linkedin id link" class="in"><br>
+                 <label for="flink">Facebook profile link:</label>
+                 <input type="text" placeholder="facebook id link" class="in"><br>
+                 <label for="idarena">Enter your arena id:</label>
+                 <input type="text" class="in" placeholder="********"><br>
+                 <input type="button" class="bn" value="Save changes" class="bn">
+             </form>
             </div>
-            <div class="P1">
+            <div class="addskill">
+               <h3>Add a new skill</h3>
                <form action="">
-                <input type="password" placeholder="Write your gameid"><br>
-                <textarea id="" cols="30" rows="10" placeholder="write your reviews here"></textarea><br>
-                <button>Send</button>
+                   <label for="">Enter skill:</label>
+                   <input type="text" class="in" placeholder="c++,nodejs,reactjs"><br>
+                   <label for="idarena">Enter your arena id:</label>
+                   <input type="text" class="in" placeholder="********"><br>
+                   <input type="button" value="Add" class="bn">
+               </form>
+            </div>
+            <div class="editarenaid">
+               <h3>Edit Arena ID</h3>
+               <form action="">
+                   <input type="text" placeholder="Old Arena ID" class="in"><br>
+                   <input type="text" placeholder="New Arena ID" class="in"><br>
+                   <input type="button" value="Change ID" class="bn">
                </form>
             </div>
         </div>
     </main>
-
     <!-- Footer -->
     <footer>
         <div>
