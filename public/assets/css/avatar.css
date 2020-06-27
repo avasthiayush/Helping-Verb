@@ -40,14 +40,15 @@ color: #e4255e;
   
   main{
       background-color: #303031;
-      color:grey;
+      color:rgb(173, 171, 171);
   }
   h1{
     color:#F7DC6F;
     padding:15px;
-    font-size: 35px;
+    font-size: 35px; 
     text-align: center;
   }
+
   h3{
     color:#F7DC6F;
     padding:15px;
@@ -68,6 +69,9 @@ color: #e4255e;
     text-decoration: none;
     font-size: 23px;
     color:grey;
+  }
+  .s2 a:hover{
+    color:#e4255e;
   }
   p{
     text-align: center;
@@ -98,7 +102,7 @@ color: #e4255e;
     cursor: pointer;
     float: right;
   }
-  
+
   /* Style the container */
   .container {
     border:2px solid #F7DC6F; 
@@ -137,6 +141,13 @@ color: #e4255e;
       width: 100%;
       margin-top: 0;
     }
+  }
+  #butt{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 45%;
+    padding-left:40px;
+    padding-right: 40px;
   }
   #back2Top {
     width: 35px;

@@ -95,7 +95,7 @@ p{
  .aboutme{
   text-align: center;
   padding:20px;
-  color:grey;
+  color:rgb(173, 171, 171);
   margin:16px 15%;
   border:2px solid #F7DC6F; 
   border-radius: 25px;
@@ -104,7 +104,7 @@ p{
 .abouthv{
   text-align: center;
   padding:20px;
-  color:grey;
+  color:rgb(173, 171, 171);
   margin:10px 15%;
   border:2px solid #F7DC6F; 
   border-radius: 25px;
@@ -113,7 +113,7 @@ p{
 .req{
   text-align: center; 
   padding:20px;
-  color:grey;
+  color:rgb(173, 171, 171);
   margin:16px 15%;
   border:2px solid #F7DC6F; 
   border-radius: 25px;
