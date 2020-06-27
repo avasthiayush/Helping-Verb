@@ -20,7 +20,7 @@ module.exports=function(app)
     });
     app.get('/contest',function(req,res)
     {
-        res.render('contest');
+        res.render('contest'); 
     });
     app.get('/avatar',function(req,res)
     {
