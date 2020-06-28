@@ -95,7 +95,7 @@ input[type=text], input[type=password],input[type=button]{
   border-radius:20px;
   font-family:inherit;
   font-size: 20px;
-}
+} 
 #bn{
   color:grey;
   background-color: #283747;

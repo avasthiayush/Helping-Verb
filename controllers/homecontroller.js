@@ -11,26 +11,21 @@ mongoose.connect('mongodb://helpingverb:sonusir@helpingverb-shard-00-00-lonlm.mo
  /*model for contest.*/
 let Byschema=new mongoose.Schema({
     name:String,
-    cname:{type:Array, default: ["","","","","","","","","",""]},
-    curl:{type:Array, default: ["","","","","","","","","",""]},
-    hname:{type:Array, default: ["","","","","","","","","",""]},
-    hurl:{type:Array, default: ["","","","","","","","","",""]},
-    oname:{type:Array, default: ["","","","","","","","","",""]},
-    ourl:{type:Array, default: ["","","","","","","","","",""]}
+    cname:Array,
+    curl:Array,
+    hname:Array,
+    hurl:Array,
+    oname:Array,
+    ourl:Array
  });
 
- let noob={
-     name:"dummy",
-     arenaid:"1",
-     clink:"kkk",
-     skills:["","","","","","",""]
- };
  /*Model for profile.*/
  let Myschema=new mongoose.Schema({
     name:String,
     arenaid:String,
     clink:String,
-    skills:{type:Array, default: ["","","","","","",""]}
+    glink:String,
+    skills:Array
  });
  
  let First=mongoose.model('First',Myschema);

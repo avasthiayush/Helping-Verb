@@ -32,11 +32,13 @@ background-image: url(
 .navbar-custom { 
   background-color: #000; 
 } 
-.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item.active .nav-link, 
 .navbar-nav .nav-item:hover .nav-link {
 color: #e4255e;
 }
 /*header style ends here.*/
+
+/*main content.*/
 .banner {
   position:relative;
 }
@@ -89,7 +91,7 @@ p{
 .icons .fa:hover{
   background: yellow;
   color:#c3073f;
-  transition: 0.5%;
+  transition: 0.5%; 
   cursor: pointer;
 } 
  .aboutme{
@@ -155,6 +157,9 @@ p{
   background-color: grey;
   color: #000;
 }
+/*main content end.*/
+
+
 /*footer.*/
  footer{
   background:#000;

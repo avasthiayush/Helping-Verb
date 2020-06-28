@@ -1,4 +1,5 @@
-body, ul, li, h1, h2, a{
+
+ body, ul, li, h1, h2, a{
   margin: 0;
   padding: 0;
 } 
@@ -30,13 +31,14 @@ background-image: url(
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
 } 
 .navbar-custom { 
-  background-color: #000; 
+  background-color: #000;  
 } 
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link {
 color: #e4255e;
 }
 /*header style ends here.*/
+
 
 /*main style starts here*/
 .main0{
@@ -102,6 +104,10 @@ form.example::after {
   margin: auto;
   text-align: center;
 }
+.row{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 #back2Top {
   width: 35px;
   line-height: 35px;
@@ -142,7 +148,7 @@ form.example::after {
 #back2Top:hover {
   color: #000;
 }
-/*main style ends here*/
+
 
 /*footer.*/
  footer{
@@ -160,5 +166,7 @@ form.example::after {
    color:yellow;
  }
  /*footer ends here.*/
+
+ 
 
  

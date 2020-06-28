@@ -66,6 +66,9 @@
                       <% for(let i=0;i<data[0].cname.length;i++){%>
                         <li><a href="<%=data[0].curl[i]%>"><%=(i+1)+"."%><%=data[0].cname[i]%></a></li>
                       <%}%>
+                      <% for(let i=data[0].cname.length+1;i<=10;i++){%>
+                        <li><a href=""></a></li>
+                      <%}%>
                     </ul>
                     </div>
                 </div>
@@ -77,6 +80,9 @@
                           <% for(let i=0;i<data[0].hname.length;i++){%>
                             <li><a href="<%=data[0].hurl[i]%>"><%=(i+1)+"."%><%=data[0].hname[i]%></a></li>
                           <%}%>
+                          <% for(let i=data[0].hname.length+1;i<=10;i++){%>
+                            <li><a href=""></a></li>
+                          <%}%>
                         </ul>
                     </div>
                 </div>
@@ -87,6 +93,9 @@
                         <ul class="unl">
                           <% for(let i=0;i<data[0].oname.length;i++){%>
                             <li><a href="<%=data[0].ourl[i]%>"><%=(i+1)+"."%><%=data[0].oname[i]%></a></li>
+                          <%}%>
+                          <% for(let i=data[0].oname.length+1;i<=10;i++){%>
+                            <li><a href=""></a></li>
                           <%}%>
                         </ul>
                     </div>

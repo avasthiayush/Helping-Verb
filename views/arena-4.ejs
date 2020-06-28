@@ -51,250 +51,921 @@
       <div class="welcome">
           <span>Welcome to the Arena of Masters</span>
       </div>
+
       <div class="forma">
           <form class="example" action="">
               <input type="text" placeholder="Search by Skills:cpp nodejs reactjs html css mongodb etc." name="search" id="tags">
               <button type="submit"><i class="fa fa-search" style="color:yellow"></i></button>
           </form>
       </div>
+
       <hr style="background-color:white; margin-left: 60px; margin-right: 60px;">
-       <div>
+
           <div class="container" style="margin-top: 25px; margin-bottom: 25px;">
+
             <%if(data.length%4==0){%>
               <%for(let i=0;i<data.length;i+=4){%>
                 <div class="row" data-aos="fade-up">
                   <div class="col-md-3">
-                      <div class="card">
-                      <svg data-jdenticon-value="user127" width="80" height="80">
-                          Fallback text or image for browsers not supporting inline svg.
-                      </svg>
-                      <img src="" alt="1st" style="width:100%">
-                      <h1><%=data[i].name%></h1>
-                      <div>
-                        <h1>Skills</h1>
-                        <ul>
-                          <%for(let j=0;j<data[i].skill.length;j++){%>
-                            <li><%data[i].skill[j]%></li>
-                          <%}%>
-                        </ul>
-                      </div>
-                      <div>
-                        <a href="https://www.linkedin.com/in/markamansingh/"><i class="fa fa-linkedin" ></i></a>
-                      </div>
-                      </div>
+                    <div class="card">
+                       <svg data-jdenticon-value="<%=data[i].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i].skills.length>=k+1){%>
+                                  <li><%=data[i].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i].skills.length>=k+1){%>
+                                  <li><%=data[i].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
                   <div class="col-md-3">
                     <div class="card">
-                    <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                    <h1>Newbies</h1>
-                    <p>Lorem epsum</p>
-                    </div>
+                      <svg data-jdenticon-value="<%=data[i+1].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i+1].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i+1].skills.length>=k+1){%>
+                                  <li><%=data[i+1].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i+1].skills.length>=k+1){%>
+                                  <li><%=data[i+1].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i+1].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i+1].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
                   <div class="col-md-3">
                     <div class="card">
-                    <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                    <h1>Newbies</h1>
-                    <p>Lorem epsum</p>
-                    </div>
+                      <svg data-jdenticon-value="<%=data[i+2].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i+2].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i+2].skills.length>=k+1){%>
+                                  <li><%=data[i+2].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i+2].skills.length>=k+1){%>
+                                  <li><%=data[i+2].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i+2].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i+2].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
                   <div class="col-md-3">
                     <div class="card">
-                    <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                    <h1>Newbies</h1>
-                    <p>Lorem epsum</p>
-                    </div>
+                      <svg data-jdenticon-value="<%=data[i+3].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i+3].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i+3].skills.length>=k+1){%>
+                                  <li><%=data[i+3].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i+3].skills.length>=k+1){%>
+                                  <li><%=data[i+3].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i+3].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i+3].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
-                  </div>
+                </div>
               <%}%> 
             <%}%>
+
             <%if(data.length%4==1){%>
               <%for(let i=0;i<data.length;i+=4){%>
                 <%if(data.length>=i+4){%>
                 <div class="row" data-aos="fade-up">
                   <div class="col-md-3">
                       <div class="card">
-                      <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                      <h1>Newbies</h1>
-                      <p>Lorem epsum</p>
+                        <svg data-jdenticon-value="<%=data[i].name%>" width="100%">
+                          OOps
+                         </svg>
+                      <h3 style="padding-top:5px;"><%=data[i].name%></h3>
+                      <div class="container">
+                        <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                        <div class="row">
+                           <div class="col">
+                             <ul style="list-style: none;">
+                                <%for(let k=0;k<4;k++){%>
+                                <%if(data[i].skills.length>=k+1){%>
+                                <li><%=data[i].skills[k]%></li>
+                                <%} else { %>
+                                <li>-</li>
+                                <%}%>
+                                <%}%>
+                             </ul>
+                           </div>
+                           <div class="col">
+                            <ul style="list-style: none;">
+                                <%for(let k=4;k<8;k++){%>
+                                <%if(data[i].skills.length>=k+1){%>
+                                <li><%=data[i].skills[k]%></li>
+                                <%} else { %>
+                                <li>-</li>
+                                <%}%>
+                                <%}%>
+                            </ul>  
+                           </div>
+                        </div>
+                      </div>
+                      <div class="icons">
+                        <a href="<%=data[i].glink%>"><i class="fa fa-github"></i></a> 
+                        <a href="<%=data[i].clink%>"><i class="fa fa-link" ></i></a> 
+                      </div>
                       </div>
                   </div>
                   <div class="col-md-3">
                     <div class="card">
-                    <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                    <h1>Newbies</h1>
-                    <p>Lorem epsum</p>
-                    </div>
+                      <svg data-jdenticon-value="<%=data[i+1].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i+1].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i+1].skills.length>=k+1){%>
+                                  <li><%=data[i+1].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i+1].skills.length>=k+1){%>
+                                  <li><%=data[i+1].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i+1].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i+1].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
                   <div class="col-md-3">
                     <div class="card">
-                    <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                    <h1>Newbies</h1>
-                    <p>Lorem epsum</p>
-                    </div>
+                      <svg data-jdenticon-value="<%=data[i+2].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i+2].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i+2].skills.length>=k+1){%>
+                                  <li><%=data[i+2].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i+2].skills.length>=k+1){%>
+                                  <li><%=data[i+2].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i+2].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i+2].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
                   <div class="col-md-3">
                     <div class="card">
-                    <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                    <h1>Newbies</h1>
-                    <p>Lorem epsum</p>
-                    </div>
+                      <svg data-jdenticon-value="<%=data[i+3].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i+3].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i+3].skills.length>=k+1){%>
+                                  <li><%=data[i+3].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i+3].skills.length>=k+1){%>
+                                  <li><%=data[i+3].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i+3].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i+3].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
-                  </div>
+                </div>
                 <%} else {%>
                   <div class="row" data-aos="fade-up">
                     <div class="col-md-3">
                         <div class="card">
-                        <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                        <h1>Newbies</h1>
-                        <p>Lorem epsum</p>
-                        </div>
+                          <svg data-jdenticon-value="<%=data[i].name%>" width="100%">
+                            OOps
+                           </svg>
+                            <h3 style="padding-top:5px;"><%=data[i].name%></h3>
+                            <div class="container">
+                              <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                              <div class="row">
+                                 <div class="col">
+                                   <ul style="list-style: none;">
+                                      <%for(let k=0;k<4;k++){%>
+                                      <%if(data[i].skills.length>=k+1){%>
+                                      <li><%=data[i].skills[k]%></li>
+                                      <%} else { %>
+                                      <li>-</li>
+                                      <%}%>
+                                      <%}%>
+                                   </ul>
+                                 </div>
+                                 <div class="col">
+                                  <ul style="list-style: none;">
+                                      <%for(let k=4;k<8;k++){%>
+                                      <%if(data[i].skills.length>=k+1){%>
+                                      <li><%=data[i].skills[k]%></li>
+                                      <%} else { %>
+                                      <li>-</li>
+                                      <%}%>
+                                      <%}%>
+                                  </ul>  
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="icons">
+                              <a href="<%=data[i].glink%>"><i class="fa fa-github"></i></a> 
+                              <a href="<%=data[i].clink%>"><i class="fa fa-link" ></i></a> 
+                            </div>
+                            </div>
                     </div>
                   </div>
                 <%}%>  
               <%}%> 
             <%}%>
+
             <%if(data.length%4==2){%>
               <%for(let i=0;i<data.length;i+=4){%>
                 <%if(data.length>=i+4){%>
                 <div class="row" data-aos="fade-up">
                   <div class="col-md-3">
-                      <div class="card">
-                      <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                      <h1>Newbies</h1>
-                      <p>Lorem epsum</p>
-                      </div>
+                    <div class="card">
+                      <svg data-jdenticon-value="<%=data[i].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i].skills.length>=k+1){%>
+                                  <li><%=data[i].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i].skills.length>=k+1){%>
+                                  <li><%=data[i].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
                   <div class="col-md-3">
                     <div class="card">
-                    <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                    <h1>Newbies</h1>
-                    <p>Lorem epsum</p>
-                    </div>
+                      <svg data-jdenticon-value="<%=data[i+1].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i+1].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i+1].skills.length>=k+1){%>
+                                  <li><%=data[i+1].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i+1].skills.length>=k+1){%>
+                                  <li><%=data[i+1].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i+1].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i+1].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
                   <div class="col-md-3">
                     <div class="card">
-                    <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                    <h1>Newbies</h1>
-                    <p>Lorem epsum</p>
-                    </div>
+                      <svg data-jdenticon-value="<%=data[i+2].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i+2].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i+2].skills.length>=k+1){%>
+                                  <li><%=data[i+2].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i+2].skills.length>=k+1){%>
+                                  <li><%=data[i+2].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i+2].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i+2].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
                   <div class="col-md-3">
                     <div class="card">
-                    <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                    <h1>Newbies</h1>
-                    <p>Lorem epsum</p>
-                    </div>
+                      <svg data-jdenticon-value="<%=data[i+3].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i+3].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i+3].skills.length>=k+1){%>
+                                  <li><%=data[i+3].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i+3].skills.length>=k+1){%>
+                                  <li><%=data[i+3].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i+3].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i+3].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
-                  </div>
+                </div>
                 <%} else {%>
                   <div class="row" data-aos="fade-up">
                     <div class="col-md-3">
                         <div class="card">
-                        <svg data-jdenticon-value="<%=data[i].name%>" width="100%">
-                          Fallback text or image for browsers not supporting inline svg.
-                        </svg>
-                        <h3><%=data[i].name%></h3>
-                        <div style="text-align: center;">
-                          <p>Skills</p>
-                          <ul style="list-style: none;">
-                            <%for(let j=0;j<data[i].skills.length;j++){%>
-                              <li><%data[i].skills[j]%></li>
-                            <%}%>
-                          </ul>
-                        </div>
-                        <div class="icons">
-                          <a href="https://www.linkedin.com/in/markamansingh/"><i class="fa fa-link" ></i></a>
-                        </div>
-                        </div>
+                          <svg data-jdenticon-value="<%=data[i].name%>" width="100%">
+                            OOps
+                           </svg>
+                            <h3 style="padding-top:5px;"><%=data[i].name%></h3>
+                            <div class="container">
+                              <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                              <div class="row">
+                                 <div class="col">
+                                   <ul style="list-style: none;">
+                                      <%for(let k=0;k<4;k++){%>
+                                      <%if(data[i].skills.length>=k+1){%>
+                                      <li><%=data[i].skills[k]%></li>
+                                      <%} else { %>
+                                      <li>-</li>
+                                      <%}%>
+                                      <%}%>
+                                   </ul>
+                                 </div>
+                                 <div class="col">
+                                  <ul style="list-style: none;">
+                                      <%for(let k=4;k<8;k++){%>
+                                      <%if(data[i].skills.length>=k+1){%>
+                                      <li><%=data[i].skills[k]%></li>
+                                      <%} else { %>
+                                      <li>-</li>
+                                      <%}%>
+                                      <%}%>
+                                  </ul>  
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="icons">
+                              <a href="<%=data[i].glink%>"><i class="fa fa-github"></i></a> 
+                              <a href="<%=data[i].clink%>"><i class="fa fa-link" ></i></a> 
+                            </div>
+                            </div>
                     </div>
-                  
                     <div class="col-md-3">
                         <div class="card">
-                        <svg data-jdenticon-value="<%=data[i].name%>" width="100%">
-                          Fallback text or image for browsers not supporting inline svg.
-                        </svg>
-                        <h3><%=data[i+1].name%></h3>
-                        <div style="text-align: center;">
-                          <p>Skills</p>
-                          <ul style="list-style: none;">
-                            <%for(let j=0;j<data[i].skills.length;j++){%>
-                              <li><%data[i].skills[j]%></li>
-                            <%}%>
-                          </ul>
-                        </div>
-                        <div class="icons">
-                          <a href="https://www.linkedin.com/in/markamansingh/"><i class="fa fa-link" ></i></a>
-                        </div>
+                          <svg data-jdenticon-value="<%=data[i+1].name%>" width="100%">
+                            OOps
+                           </svg>
+                            <h3 style="padding-top:5px;"><%=data[i+1].name%></h3>
+                            <div class="container">
+                              <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                              <div class="row">
+                                 <div class="col">
+                                   <ul style="list-style: none;">
+                                      <%for(let k=0;k<4;k++){%>
+                                      <%if(data[i+1].skills.length>=k+1){%>
+                                      <li><%=data[i+1].skills[k]%></li>
+                                      <%} else { %>
+                                      <li>-</li>
+                                      <%}%>
+                                      <%}%>
+                                   </ul>
+                                 </div>
+                                 <div class="col">
+                                  <ul style="list-style: none;">
+                                      <%for(let k=4;k<8;k++){%>
+                                      <%if(data[i+1].skills.length>=k+1){%>
+                                      <li><%=data[i+1].skills[k]%></li>
+                                      <%} else { %>
+                                      <li>-</li>
+                                      <%}%>
+                                      <%}%>
+                                  </ul>  
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="icons">
+                              <a href="<%=data[i+1].glink%>"><i class="fa fa-github"></i></a> 
+                              <a href="<%=data[i+1].clink%>"><i class="fa fa-link" ></i></a> 
+                            </div>
+                            </div>
                     </div>
                   </div>
                 <%}%>  
               <%}%> 
             <%}%>
+
             <%if(data.length%4==3){%>
               <%for(let i=0;i<data.length;i+=4){%>
                 <%if(data.length>=i+4){%>
                 <div class="row" data-aos="fade-up">
                   <div class="col-md-3">
-                      <div class="card">
-                      <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                      <h1>Newbies</h1>
-                      <p>Lorem epsum</p>
-                      </div>
+                    <div class="card">
+                      <svg data-jdenticon-value="<%=data[i].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i].skills.length>=k+1){%>
+                                  <li><%=data[i].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i].skills.length>=k+1){%>
+                                  <li><%=data[i].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
                   <div class="col-md-3">
                     <div class="card">
-                    <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                    <h1>Newbies</h1>
-                    <p>Lorem epsum</p>
-                    </div>
+                      <svg data-jdenticon-value="<%=data[i+1].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i+1].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i+1].skills.length>=k+1){%>
+                                  <li><%=data[i+1].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i+1].skills.length>=k+1){%>
+                                  <li><%=data[i+1].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i+1].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i+1].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
                   <div class="col-md-3">
                     <div class="card">
-                    <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                    <h1>Newbies</h1>
-                    <p>Lorem epsum</p>
-                    </div>
+                      <svg data-jdenticon-value="<%=data[i+2].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i+2].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i+2].skills.length>=k+1){%>
+                                  <li><%=data[i+2].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i+2].skills.length>=k+1){%>
+                                  <li><%=data[i+2].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i+2].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i+2].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
                   <div class="col-md-3">
                     <div class="card">
-                    <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                    <h1>Newbies</h1>
-                    <p>Lorem epsum</p>
-                    </div>
+                      <svg data-jdenticon-value="<%=data[i+3].name%>" width="100%">
+                        OOps
+                       </svg>
+                        <h3 style="padding-top:5px;"><%=data[i+3].name%></h3>
+                        <div class="container">
+                          <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                          <div class="row">
+                             <div class="col">
+                               <ul style="list-style: none;">
+                                  <%for(let k=0;k<4;k++){%>
+                                  <%if(data[i+3].skills.length>=k+1){%>
+                                  <li><%=data[i+3].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                               </ul>
+                             </div>
+                             <div class="col">
+                              <ul style="list-style: none;">
+                                  <%for(let k=4;k<8;k++){%>
+                                  <%if(data[i+3].skills.length>=k+1){%>
+                                  <li><%=data[i+3].skills[k]%></li>
+                                  <%} else { %>
+                                  <li>-</li>
+                                  <%}%>
+                                  <%}%>
+                              </ul>  
+                             </div>
+                          </div>
+                        </div>
+                        <div class="icons">
+                          <a href="<%=data[i+3].glink%>"><i class="fa fa-github"></i></a> 
+                          <a href="<%=data[i+3].clink%>"><i class="fa fa-link" ></i></a> 
+                        </div>
+                        </div>
                   </div>
-                  </div>
+                </div>
                 <%} else {%>
                   <div class="row" data-aos="fade-up">
                     <div class="col-md-3">
                         <div class="card">
-                        <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                        <h1>Newbies</h1>
-                        <p>Lorem epsum</p>
-                        </div>
+                          <svg data-jdenticon-value="<%=data[i].name%>" width="100%">
+                            OOps
+                           </svg>
+                            <h3 style="padding-top:5px;"><%=data[i].name%></h3>
+                            <div class="container">
+                              <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                              <div class="row">
+                                 <div class="col">
+                                   <ul style="list-style: none;">
+                                      <%for(let k=0;k<4;k++){%>
+                                      <%if(data[i].skills.length>=k+1){%>
+                                      <li><%=data[i].skills[k]%></li>
+                                      <%} else { %>
+                                      <li>-</li>
+                                      <%}%>
+                                      <%}%>
+                                   </ul>
+                                 </div>
+                                 <div class="col">
+                                  <ul style="list-style: none;">
+                                      <%for(let k=4;k<8;k++){%>
+                                      <%if(data[i].skills.length>=k+1){%>
+                                      <li><%=data[i].skills[k]%></li>
+                                      <%} else { %>
+                                      <li>-</li>
+                                      <%}%>
+                                      <%}%>
+                                  </ul>  
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="icons">
+                              <a href="<%=data[i].glink%>"><i class="fa fa-github"></i></a> 
+                              <a href="<%=data[i].clink%>"><i class="fa fa-link" ></i></a> 
+                            </div>
+                            </div>
+                    </div>
+          
+                    <div class="col-md-3">
+                        <div class="card">
+                          <svg data-jdenticon-value="<%=data[i+1].name%>" width="100%">
+                            OOps
+                           </svg>
+                            <h3 style="padding-top:5px;"><%=data[i+1].name%></h3>
+                            <div class="container">
+                              <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                              <div class="row">
+                                 <div class="col">
+                                   <ul style="list-style: none;">
+                                      <%for(let k=0;k<4;k++){%>
+                                      <%if(data[i+1].skills.length>=k+1){%>
+                                      <li><%=data[i+1].skills[k]%></li>
+                                      <%} else { %>
+                                      <li>-</li>
+                                      <%}%>
+                                      <%}%>
+                                   </ul>
+                                 </div>
+                                 <div class="col">
+                                  <ul style="list-style: none;">
+                                      <%for(let k=4;k<8;k++){%>
+                                      <%if(data[i+1].skills.length>=k+1){%>
+                                      <li><%=data[i+1].skills[k]%></li>
+                                      <%} else { %>
+                                      <li>-</li>
+                                      <%}%>
+                                      <%}%>
+                                  </ul>  
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="icons">
+                              <a href="<%=data[i+1].glink%>"><i class="fa fa-github"></i></a> 
+                              <a href="<%=data[i+1].clink%>"><i class="fa fa-link" ></i></a> 
+                            </div>
+                            </div>
                     </div>
                   
                     <div class="col-md-3">
                         <div class="card">
-                        <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                        <h1>Newbies</h1>
-                        <p>Lorem epsum</p>
-                        </div>
-                    </div>
-                 
-                    <div class="col-md-3">
-                        <div class="card">
-                        <img src="/assets/img/2nd.jpeg" alt="1st" style="width:100%">
-                        <h1>Newbies</h1>
-                        <p>Lorem epsum</p>
-                        </div>
+                          <svg data-jdenticon-value="<%=data[i+2].name%>" width="100%">
+                            OOps
+                           </svg>
+                            <h3 style="padding-top:5px;"><%=data[i+2].name%></h3>
+                            <div class="container">
+                              <p style="padding:5px; background-color: #283747; color:rgb(173, 171, 171);" >Skills</p>
+                              <div class="row">
+                                 <div class="col">
+                                   <ul style="list-style: none;">
+                                      <%for(let k=0;k<4;k++){%>
+                                      <%if(data[i+2].skills.length>=k+1){%>
+                                      <li><%=data[i+2].skills[k]%></li>
+                                      <%} else { %>
+                                      <li>-</li>
+                                      <%}%>
+                                      <%}%>
+                                   </ul>
+                                 </div>
+                                 <div class="col">
+                                  <ul style="list-style: none;">
+                                      <%for(let k=4;k<8;k++){%>
+                                      <%if(data[i+2].skills.length>=k+1){%>
+                                      <li><%=data[i+2].skills[k]%></li>
+                                      <%} else { %>
+                                      <li>-</li>
+                                      <%}%>
+                                      <%}%>
+                                  </ul>  
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="icons">
+                              <a href="<%=data[i+2].glink%>"><i class="fa fa-github"></i></a> 
+                              <a href="<%=data[i+2].clink%>"><i class="fa fa-link" ></i></a> 
+                            </div>
+                            </div>
                     </div>
                   </div>
                 <%}%>  
               <%}%> 
             <%}%>
           </div>
-       </div>
-       <div>
     <!-- Main content Ends here -->
     <hr style="background-color:white; margin-left: 60px; margin-right: 60px;">
     <a id="back2Top" title="Back to top" href="#">&#10148;</a>
