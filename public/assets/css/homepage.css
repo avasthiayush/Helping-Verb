@@ -56,7 +56,7 @@ body {
     top: 20%;
   } 
   .banner .welcome span{
-    font-size: 1.4em;
+    font-size: 1.1em;
   }
   .banner .welcome:hover{
     color:#c3073f;
@@ -92,7 +92,7 @@ body {
     margin: auto;
     text-align: center;
   }
-  button {
+  .button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -104,7 +104,7 @@ body {
     width: 100%;
     font-size: 18px;
   }
-  button:hover, a:hover {
+  .button:hover, a:hover {
     opacity: 0.7;
   }
   /*card style ends here*/
@@ -154,4 +154,194 @@ body {
    /*footer ends here.*/
 
    
- 
+  /*responsive code.*/
+
+  @media screen and (max-width:1023px)
+  {
+     .banner .welcome{
+       padding:40px;
+     }
+     .banner .welcome h2{
+      font-size: 30px;
+     }
+     .profile{
+       font-size: 50px;
+     }
+     .card h1{
+       font-size: 35px;
+     }
+  }
+  @media screen and (max-width:963px){
+    .banner .welcome{
+      
+      padding:30px;
+    }
+  }
+  @media screen and (max-width:852px){
+    .banner .welcome{
+      padding:25px;
+    }
+    .profile{
+      font-size: 35px;
+    }
+    .card h1{
+      font-size: 25px;
+    }
+    .card p{
+      font-size:15px;
+    }
+  }
+  @media screen and (max-width:818px){
+    .banner .welcome{
+      padding:20px;
+    }
+    .profile{
+      font-size: 28px;
+    }
+    .card h1{
+      font-size: 20px;
+      padding-top: 5px;
+    }
+    .card p{
+      font-size:12px;
+    }
+    .navbar-nav{
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width:775px){
+    .banner .welcome{
+      position: relative;
+      text-align: center;
+    }
+    .banner .welcome br{
+      display: none;
+    }
+    .banner .welcome h2{
+      font-size:30px;
+    }
+    .banner .welcome span{
+      font-size:1em;
+    }
+  }
+  @media screen and (max-width:767px){
+    .banner .welcome{
+      position: relative;
+      text-align: center;
+    }
+    .banner .welcome br{
+      display: none;
+    }
+    .banner .welcome h2{
+      font-size:30px;
+    }
+    .banner .welcome span{
+      font-size:1em;
+    }
+    .profile{
+      font-size: 43px;
+      padding-bottom: 20px;
+    }
+    .card{
+      margin-top: 20px;
+    }
+    .card h1{
+      font-size: 30px;
+      padding-top: 5px;
+    }
+    .card p{
+      font-size:20px;
+    }
+  }
+  @media screen and (max-width:450px){
+    .banner .welcome{
+      position: relative;
+      text-align: center;
+    }
+    .banner .welcome br{
+      display: none;
+    }
+    .banner .welcome h2{
+      font-size:23px;
+      padding:4px;
+    }
+    .banner .welcome span{
+      font-size:1em;
+    }
+    .profile{
+      font-size: 37px;
+      padding-bottom: 20px;
+    }
+    .card{
+      margin-top: 20px;
+      width:75%;
+    }
+    .card h1{
+      font-size: 30px;
+      padding-top: 5px;
+    }
+    .card p{
+      font-size:17px;
+    }
+    #back2Top {
+      width: 35px;
+      line-height: 35px;
+      position: fixed;
+      bottom: 50px;
+      right: 0;
+      font-size: 30px;
+      
+    }
+    
+  }
+  @media screen and (max-width:400px){
+    #back2Top{
+      width: 25px;
+      line-height: 25px;
+      position: fixed;
+      bottom: 55px;
+      right: 0;
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width:380px){
+    .navbar-nav .nav-item .nav-link {
+      font-size: 15px;
+    }
+    
+    .banner .welcome h2{
+      font-size:23px;
+      padding:4px;
+    }
+    .banner .welcome span{
+      font-size:1em;
+    }
+    .profile{
+      font-size: 33px;
+      padding-bottom: 10px;
+      padding-top:0px;
+    }
+    .card{
+      margin-top: 20px;
+      width:120%;
+      margin-left: -9%;
+    }
+    .card h1{
+      font-size: 30px;
+      padding-top: 5px;
+    }
+    .card p{
+      font-size:17px;
+    }
+    #back2Top{
+      width: 25px;
+      line-height: 25px;
+      position: fixed;
+      bottom: 77px;
+      right: 0;
+      font-size: 20px;
+    }
+    footer{
+      font-size: 15px;
+    }
+  }

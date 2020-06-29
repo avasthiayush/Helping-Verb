@@ -26,6 +26,7 @@ const { stringify } = require('querystring');
 /*connect to database.*/
 mongoose.connect('mongodb://helpingverb:sonusir@helpingverb-shard-00-00-lonlm.mongodb.net:27017,helpingverb-shard-00-01-lonlm.mongodb.net:27017,helpingverb-shard-00-02-lonlm.mongodb.net:27017/helpingverb?ssl=true&replicaSet=HelpingVerb-shard-0&authSource=admin&retryWrites=true&w=majority', { useNewUrlParser: true,useUnifiedTopology: true })
 
+/*Schema and Models.*/
 
  /*Schema for contest.*/
 let Byschema=new mongoose.Schema({
@@ -62,17 +63,24 @@ let Byschema=new mongoose.Schema({
 
  /* Creating model for blueprint.*/
  let Contest=mongoose.model('Contest',Byschema);
+
+ /*schema and model end.*/
+
+ /*method override including.*/
  app.use(methodOverride('_method'));
+
  mongoose.set('useFindAndModify', false);
 
 /*Firing urlpareser.*/
 let urlencodedParser = bodyParser.urlencoded({ extended: false });
+
 /*Setting Templating engine.*/
 app.set('view engine','ejs');
 
 /*Access to static files.*/
 app.use(express.static('./public'));
 
+/*get request for contest page.*/
 app.get('/contest',function(req,res)
 {
     Contest.find({},function(err,data)
@@ -85,10 +93,12 @@ app.get('/contest',function(req,res)
     })
 });
 
+/*get request for home page.*/
 app.get('/',function(req,res)
 {
     res.render('homepage');
 });
+
 
 app.get('/arena-1',function(req,res)
 {
@@ -162,14 +172,6 @@ app.get('/homepage',function(req,res)
 {
     res.render('homepage');
 });
-
-// app.get('/check',function(req,res){
-//     var y= Arenaid.find({id:req.query.pass})
-//     y.exec(function (err, data) {
-//     if(data.length==0) res.render('test');
-//     else res.render('test');
-//    });
-// });
 
 /*All post request.*/
 app.post('/update/general',urlencodedParser,function(req,res){
@@ -257,6 +259,8 @@ app.post('/update/general',urlencodedParser,function(req,res){
     }
 });
 
+
+/*add contest.*/
 app.post('/addcontest',urlencodedParser,function(req,res){
     Contest.findOneAndUpdate({ctype:req.body.contest},
     {
@@ -275,7 +279,7 @@ app.post('/addcontest',urlencodedParser,function(req,res){
    });
 });
 
-
+/*add skill.*/
 app.post('/addskill',urlencodedParser,function(req,res){
     if(req.body.yr==1)
     {
@@ -356,15 +360,6 @@ app.post('/addskill',urlencodedParser,function(req,res){
 });
 }
 });
-
-
-// app.get('/check',function(req,res){
-//     var y= Arenaid.find({id:req.query.pass})
-//     y.exec(function (err, data) {
-//     if(data.length==0 || err) res.render('contest')
-//     else res.render('avatar');
-//    });
-// })
 
 
 
