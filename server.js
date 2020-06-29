@@ -153,10 +153,23 @@ app.get('/about',function(req,res)
     res.render('about');
 });
 
+app.get('/test',function(req,res)
+{
+    res.render('test');
+});
+
 app.get('/homepage',function(req,res)
 {
     res.render('homepage');
 });
+
+// app.get('/check',function(req,res){
+//     var y= Arenaid.find({id:req.query.pass})
+//     y.exec(function (err, data) {
+//     if(data.length==0) res.render('test');
+//     else res.render('test');
+//    });
+// });
 
 /*All post request.*/
 app.post('/update/general',urlencodedParser,function(req,res){
@@ -339,7 +352,6 @@ app.post('/addskill',urlencodedParser,function(req,res){
      { 
          
          res.redirect('/avatar');
-         alert("skill added");
      }
 });
 }
