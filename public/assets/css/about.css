@@ -158,6 +158,10 @@ p{
   background-color: grey;
   color: #000;
 }
+p,ul{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
 /*main content end.*/
 
 
@@ -170,10 +174,6 @@ p{
   text-align: center;
   color:grey;
  }
- p,ul{
-   margin-top: 10px;
-   margin-bottom: 5px;
- }
  .fid{
    padding:6px;
  }
@@ -182,4 +182,190 @@ p{
  }
  /*footer ends here.*/
 
- 
+ /*responsive.*/
+ @media screen and (max-width:1125px)
+ {
+  .banner .welcome{
+    position: relative;
+    text-align: center;
+    left:0%;
+    padding:20px;
+  }
+  .banner .welcome h2{
+    font-size: 40px;
+  }
+  .banner .welcome br{
+    display: none;
+  }
+  .banner .welcome span{
+    font-size:1em;
+  }
+ }
+ @media screen and (max-width:750px){
+   .abouthv{
+     width:80%;
+     margin-left: 10%;
+   }
+   .req{
+    width:80%;
+    margin-left: 10%;
+  }
+  .aboutme{
+    width:80%;
+    margin-left: 10%;
+  }
+  .sugg{
+    width:80%;
+    margin-left: 10%;
+  }
+ }
+ @media screen and (max-width:750px){
+  .banner .welcome{
+    padding:15px;
+  }
+  h2,h4{
+    font-size: 25px;
+  }
+  .banner .welcome h2{
+    font-size: 35px;
+  }
+  p{
+    font-size: 17px;
+  }
+  .req li{
+    font-size: 17px;
+  }
+  .icons{
+    position: relative;
+    margin-top:10px;
+  }
+  .icons .fa{
+    width:30px;
+    height: 30px;
+    padding:8px;
+    background: #fff;
+    border-radius:50%;
+    text-align: center;
+    color:grey;
+    font-size: 15px;
+  }
+  .icons .fa:hover{
+    background: yellow;
+    color:#c3073f;
+    transition: 0.5%; 
+    cursor: pointer;
+  } 
+ }
+ @media screen and (max-width:500px){
+   main{
+     padding-top:0px;
+   }
+  .banner .welcome{
+    padding:10px;
+  }
+  .banner .welcome h2{
+    font-size: 30px;
+  }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    }
+ }
+ @media screen and (max-width:430px){
+  .banner .welcome{
+    padding:10px;
+  }
+  .banner .welcome h2{
+    font-size: 26px;
+  }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    }
+    #back2Top {
+      width: 25px;
+      line-height: 25px;
+      position: fixed;
+      bottom: 60px;
+      right: 0;
+      font-size: 22px;
+    }
+    .abouthv{
+      width:85%;
+      margin-left: 7.5%;
+    }
+    .req{
+      width:85%;
+      margin-left: 7.5%;
+   }
+   .aboutme{
+    width:85%;
+    margin-left: 7.5%;
+   }
+   .sugg{
+    width:85%;
+    margin-left: 7.5%;
+   }
+   h2,h4{
+     font-size: 20px;
+   }
+   footer{
+     font-size: 15px;
+   }
+ }
+ @media screen and (max-width:430px){
+  .banner .welcome{
+    padding:10px;
+  }
+  .banner .welcome h2{
+    font-size: 30px;
+  }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    }
+ }
+ @media screen and (max-width:430px){
+  .banner .welcome{
+    padding:8px;
+  }
+  .banner .welcome h2{
+    font-size: 20px;
+  }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 15px;
+    }
+    #back2Top {
+      width: 17px;
+      line-height: 17px;
+      position: fixed;
+      bottom: 60px;
+      right: 0;
+      font-size: 17px;
+    }
+    .abouthv{
+      width:90%;
+      margin-left: 5%;
+    }
+    .req{
+      width:90%;
+      margin-left: 5%;
+   }
+   .aboutme{
+    width:90%;
+      margin-left: 5%;
+   }
+   .sugg{
+    width:90%;
+      margin-left: 5%;
+   }
+   p{
+    font-size: 14px;
+  }
+  .req li{
+    font-size: 14px;
+  }
+   h2,h4{
+     font-size: 17px;
+   }
+   footer{
+     font-size: 14px;
+   }
+ }
