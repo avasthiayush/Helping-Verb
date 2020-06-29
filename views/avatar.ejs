@@ -55,13 +55,13 @@
               <p>Create a Arena ID that will be your unique identity at Helping-Verb<br>
               Its kind of password for you.</p>
               <h4>Check here wheather your Arena ID is unique or not.</h4>
-              <form action="action_page.php">
+              <form action="">
                 <div class="row">
                   <div class="col-25">
-                    <label for="pass1">Enter Arena ID:</label>
+                    <label for="pass">Enter Arena ID:</label>
                   </div>
                   <div class="col-75">
-                    <input type="text" id="pass1" name="pass1" placeholder="Enter a new arena ID" required>
+                    <input type="text" id="pass" name="pass" placeholder="Enter a new arena ID" required>
                   </div>
                 </div>
                 <div class="row">
@@ -83,7 +83,8 @@
             <div class="editgeneral">
              <div class="container">
               <h3>Edit General informations.</h3>
-              <form action="action_page.php">
+              <form action="/update/general" method="POST">
+                <input(type="hidden", name="_method", value="PUT")>
                 <div class="row">
                   <div class="col-25">
                     <label for="name">Name:</label>
@@ -92,7 +93,14 @@
                     <input type="text" id="name" name="name" placeholder="Your name..">
                   </div>
                 </div>
-                
+                <div class="row">
+                  <div class="col-25">
+                    <label for="glink">Github link:</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="glink" name="glink" placeholder="Git hub profile link..">
+                  </div>
+                </div>
                 <div class="row">
                   <div class="col-25">
                     <label for="clink">Communication link:</label>
@@ -120,7 +128,7 @@
               <hr style="margin:auto 37%; background-color: grey;">
                <div class="container">
                 <h3>Add a new skill</h3>
-                <form action="action_page.php">
+                <form action="">
                   <div class="row">
                     <div class="col-25">
                       <label for="skill">Skill:</label>
@@ -148,7 +156,8 @@
               <hr style="margin:auto 37%; background-color: grey;">
                <div class="container">
                 <h3>Edit Arena ID</h3>
-                <form action="action_page.php">
+                <form action="/update/id" method="POST">
+                  <input(type="hidden", name="_method", value="PUT")>
                   <div class="row">
                     <div class="col-25">
                       <label for="pass1">Your Old Arena ID:</label>
