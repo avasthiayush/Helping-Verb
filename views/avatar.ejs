@@ -55,7 +55,7 @@
               <p>Create a Arena ID that will be your unique identity at Helping-Verb<br>
               Its kind of password for you.</p>
               <h4>Check here wheather your Arena ID is unique or not.</h4>
-              <form action="">
+              <form action="/check" method="GET">
                 <div class="row">
                   <div class="col-25">
                     <label for="pass">Enter Arena ID:</label>
@@ -111,6 +111,14 @@
                 </div>
                 <div class="row">
                   <div class="col-25">
+                    <label for="yr">Your Study Year:</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="yr" name="yr" placeholder="Enter your study year(1,2,3,4)" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
                     <label for="pass">Your Arena ID:</label>
                   </div>
                   <div class="col-75">
@@ -128,13 +136,22 @@
               <hr style="margin:auto 37%; background-color: grey;">
                <div class="container">
                 <h3>Add a new skill</h3>
-                <form action="">
+                <form action="/addskill" method="POST">
+                  <input(type="hidden", name="_method", value="PUT")>
                   <div class="row">
                     <div class="col-25">
                       <label for="skill">Skill:</label>
                     </div>
                     <div class="col-75">
                       <input type="text" id="skill" name="skill" placeholder="c++,nodejs,reactjs....">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="yr">Your Study Year:</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="yr" name="yr" placeholder="Enter your study year (1,2,3,4)" required>
                     </div>
                   </div>
                   <div class="row">
@@ -151,7 +168,8 @@
                 </form>
               </div>
             </div>
-            <div class="editarenaid">
+
+            <!-- <div class="editarenaid">
               <h1>Editing Arena ID</h1>
               <hr style="margin:auto 37%; background-color: grey;">
                <div class="container">
@@ -179,7 +197,8 @@
                   </div>
                 </form>
               </div>
-            </div>
+            </div> -->
+
         </div>
     </main>
     <!-- main content ends here -->

@@ -88,7 +88,7 @@ color: #e4255e;
   height:170px;
   width:170px;
 }
-input[type=text], input[type=password],input[type=button]{
+input[type=text], input[type=password],input[type=submit]{
   padding:10px;
   border: 2px solid #eee;
   margin:10px 0; 

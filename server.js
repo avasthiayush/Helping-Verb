@@ -20,6 +20,7 @@ let path=require('path');
 
 /*Adding method override.*/
 let methodOverride = require('method-override');
+const { stringify } = require('querystring');
 
 
 /*connect to database.*/
@@ -28,13 +29,9 @@ mongoose.connect('mongodb://helpingverb:sonusir@helpingverb-shard-00-00-lonlm.mo
 
  /*Schema for contest.*/
 let Byschema=new mongoose.Schema({
-    name:String,
+    ctype:String,
     cname:Array,
     curl:Array,
-    hname:Array,
-    hurl:Array,
-    oname:Array,
-    ourl:Array
  });
 
  /*Schema for profile.*/
@@ -45,7 +42,15 @@ let Byschema=new mongoose.Schema({
     glink:String,
     skills:Array
  });
+
+ /*Arana ID schema.*/
+ let Zyschema=new mongoose.Schema({
+    id:String,
+ });
  
+/*Arena id model.*/
+ let Arenaid=mongoose.model('Arenaid',Zyschema);
+
  /*profile models.*/
  let First=mongoose.model('First',Myschema);
 
@@ -155,44 +160,201 @@ app.get('/homepage',function(req,res)
 
 /*All post request.*/
 app.post('/update/general',urlencodedParser,function(req,res){
-        First.findOneAndUpdate({arenaid:req.body.pass},
+        let aman=new Object
+        if(req.body.name.length>0)
         {
-            name:req.body.name
-        },
+            aman.name=req.body.name;
+        }
+        if(req.body.clink.length>0)
+        {
+            aman.clink=req.body.clink;
+        }
+        if(req.body.glink.length>0)
+        {
+            aman.glink=req.body.glink;
+        }
+        if(req.body.yr==1)
+        {
+        First.findOneAndUpdate({arenaid:req.body.pass},
+        aman,
         function(err, docs)
         {
             if(err) 
             {
-                
-                res.render('contest');
-                // res.json(err);
+                res.json(err);
             }
             else
             { 
-            res.render('avatar');
+                res.redirect('/avatar');
             }
        });
+       }
+       else if(req.body.yr==2)
+       {
+       Second.findOneAndUpdate({arenaid:req.body.pass},
+       aman,
+       function(err, docs)
+       {
+           if(err) 
+           {
+               
+               
+               res.json(err);
+           }
+           else
+           { 
+            res.redirect('/avatar');
+           }
+      });
+      }
+      else if(req.body.yr==3)
+      {
+      Third.findOneAndUpdate({arenaid:req.body.pass},
+      aman,
+      function(err, docs)
+      {
+          if(err) 
+          {
+            
+              res.json(err);
+          }
+          else
+          { 
+            res.redirect('/avatar');
+          }
+     });
+     }
+     else if(req.body.yr==4)
+     {
+     Final.findOneAndUpdate({arenaid:req.body.pass},
+     aman,
+     function(err, docs)
+     {
+         if(err) 
+         {
+             
+            
+             res.json(err);
+         }
+         else
+         { 
+            res.redirect('/avatar');
+         }
+    });
+    }
 });
 
-app.post('/update/id',urlencodedParser,function(req,res){
+app.post('/addcontest',urlencodedParser,function(req,res){
+    Contest.findOneAndUpdate({ctype:req.body.contest},
+    {
+        $push: {curl:req.body.contesturl,cname:req.body.cname}
+    },
+    function(err, docs)
+    {
+        if(err) 
+        {
+            res.json(err);
+        }
+        else
+        { 
+            res.redirect('/contest');
+        }
+   });
+});
+
+
+app.post('/addskill',urlencodedParser,function(req,res){
+    if(req.body.yr==1)
+    {
     First.findOneAndUpdate({arenaid:req.body.pass},
     {
-        arenaid:req.body.pass1
+        $push: {skills:req.body.skill}
     },
     function(err, docs)
     {
         if(err) 
         {
             
-            res.render('contest');
-            // res.json(err);
+            res.json(err);
         }
         else
         { 
-        res.render('avatar');
+            
+            res.redirect('/avatar');
         }
    });
+   }
+   else if(req.body.yr==2)
+   {
+   Second.findOneAndUpdate({arenaid:req.body.pass},
+   {
+       $push: {skills:req.body.skill}
+   },
+   function(err, docs)
+   {
+       if(err) 
+       {
+           
+           res.json(err);
+       }
+       else
+       { 
+           res.redirect('/avatar');
+       }
+  });
+  }
+  else if(req.body.yr==3)
+  {
+  Third.findOneAndUpdate({arenaid:req.body.pass},
+  {
+      $push: {skills:req.body.skill}
+  },
+  function(err, docs)
+  {
+      if(err) 
+      {
+          
+          res.json(err);
+      }
+      else
+      { 
+          res.redirect('/avatar');
+      }
+ });
+ }
+ else if(req.body.yr==4)
+ {
+ Final.findOneAndUpdate({arenaid:req.body.pass},
+ {
+     $push: {skills:req.body.skill}
+ },
+ function(err, docs)
+ {
+     if(err) 
+     {
+         
+         res.json(err);
+     }
+     else
+     { 
+         
+         res.redirect('/avatar');
+         alert("skill added");
+     }
 });
+}
+});
+
+
+// app.get('/check',function(req,res){
+//     var y= Arenaid.find({id:req.query.pass})
+//     y.exec(function (err, data) {
+//     if(data.length==0 || err) res.render('contest')
+//     else res.render('avatar');
+//    });
+// })
+
+
 
 /*Listening to server.*/
 app.listen(3000);

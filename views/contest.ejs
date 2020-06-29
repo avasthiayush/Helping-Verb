@@ -63,12 +63,18 @@
                     <span class="spn"><i class="fa fa-code" ></i></span>
                     <h1 class="heading" >Coding</h1>
                     <ul class="unl">
+                      <%if(data[0].cname.length>=10){%>
+                        <% for(let i=data[0].cname.length-10;i<data[0].cname.length;i++){%>
+                          <li><a href="<%=data[0].curl[i]%>"><%=data[0].cname[i]%></a></li>
+                        <%}%>
+                      <%}else{%>
                       <% for(let i=0;i<10;i++){%>
                         <%if(data[0].cname.length-1>=i){%>
                         <li><a href="<%=data[0].curl[i]%>"><%=data[0].cname[i]%></a></li>
                         <%}else{%>
                           <li>-</li>
                         <%}%>
+                      <%}%>
                       <%}%>
                     </ul>
                     </div>
@@ -78,12 +84,18 @@
                         <span class="spn"><i class="fa fa-rocket"></i></span>
                         <h1 class="heading"  >Hackathons</h1>
                         <ul class="unl">
+                          <%if(data[1].cname.length>=10){%>
+                            <% for(let i=data[1].cname.length-10;i<data[1].cname.length;i++){%>
+                              <li><a href="<%=data[1].curl[i]%>"><%=data[1].cname[i]%></a></li>
+                            <%}%>
+                          <%}else{%>
                           <% for(let i=0;i<10;i++){%>
-                            <%if(data[0].hname.length-1>=i){%>
-                            <li><a href="<%=data[0].hurl[i]%>"><%=data[0].hname[i]%></a></li>
+                            <%if(data[1].cname.length-1>=i){%>
+                            <li><a href="<%=data[1].curl[i]%>"><%=data[1].cname[i]%></a></li>
                             <%}else{%>
                               <li>-</li>
                             <%}%>
+                          <%}%>
                           <%}%>
                         </ul>
                     </div>
@@ -93,12 +105,18 @@
                         <span class="spn"><i class="fa fa-terminal"></i></span>
                         <h1 class="heading" >Others</h1>
                         <ul class="unl">
+                          <%if(data[2].cname.length>=10){%>
+                            <% for(let i=data[2].cname.length-10;i<data[2].cname.length;i++){%>
+                              <li><a href="<%=data[2].curl[i]%>"><%=data[2].cname[i]%></a></li>
+                            <%}%>
+                          <%}else{%>
                           <% for(let i=0;i<10;i++){%>
-                            <%if(data[0].oname.length-1>=i){%>
-                            <li><a href="<%=data[0].ourl[i]%>"><%=data[0].oname[i]%></a></li>
+                            <%if(data[2].cname.length-1>=i){%>
+                            <li><a href="<%=data[2].curl[i]%>"><%=data[2].cname[i]%></a></li>
                             <%}else{%>
                               <li>-</li>
                             <%}%>
+                          <%}%>
                           <%}%>
                         </ul>
                     </div>
@@ -111,17 +129,17 @@
                   Add new contest
                 </div>
                 <hr style="background-color:white; margin-left: 35%; margin-right: 35%;">
-               <form action="">
+               <form action="/addcontest" method="POST">
+                <input(type="hidden", name="_method", value="PUT")>
                    <select name="contest" id="cd">
-                       <option value="contest">Coding</option>
-                       <option value="contest">Hackathons</option>
-                       <option value="contest">Others</option>
+                       <option value="coding">Coding</option>
+                       <option value="hackathon">Hackathons</option>
+                       <option value="others">Others</option>
                    </select>
                    <br>
-                   <input type="text" placeholder="Add contest name (x contest at y date)" id="cn"><br>
+                   <input type="text" name="cname" placeholder="Add contest name (x contest at y date)" id="cn"><br>
                    <input type="text" name="contesturl" id="cu" placeholder="URL of contest"><br>
-                   <input type="password" placeholder="Enter your Arena ID" id="gi"><br>
-                   <input type="button" value="Add contest" id="bn">
+                   <input type="submit" value="Add contest" id="bn">
                </form>
             </div>
         </div>
