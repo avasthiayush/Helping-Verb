@@ -14,48 +14,48 @@ Idea of helping-verb is to connect with eachother and pass valuable information 
 ## Here are some snaps of working model.
 
 # 1.
-![](/image/1.png)
+![](/images/1.png)
 
 <br>
 
 # 2.
-![](/image/2.png)
+![](/images/2.png)
 
 
 <br>
 
 # 3.
-![](/image/3.png)
+![](/images/3.png)
 
 <br>
 
 # 4.
-![](/image/4.png)
+![](/images/4.png)
 
 <br>
 
 # 5.
-![](/image/5.png)
+![](/images/5.png)
 
 <br>
 
 # 6.
-![](/image/6.png)
+![](/images/6.png)
 
 <br>
 
 # 7.
-![](/image/7.png)
+![](/images/7.png)
 
 <br>
 
 # 8.
-![](/image/8.png)
+![](/images/8.png)
 
 <br>
 
 # 9.
-![](/image/9.png)
+![](/images/9.png)
 
 <br>
 
