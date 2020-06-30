@@ -46,18 +46,16 @@ color: #e4255e;
 }
 .welcome{
   font-size: 50px;
-  padding:80px;
-  padding-top:100px;
+  padding:50px;
   padding-bottom:60px;
   text-align: center;
   color:yellow;
 }
-
+/* 
  * {
   box-sizing: border-box; 
 }
 
-/* Style the search field */
 form.example input[type=text] { 
   padding: 10px;
   font-size: 17px;
@@ -68,7 +66,6 @@ form.example input[type=text] {
   background: #f1f1f1;
 }
 
-/* Style the submit button */
 .forma{
   text-align: center;
   padding:10px;
@@ -83,7 +80,7 @@ form.example button {
   color: white;
   font-size: 17px;
   border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
+  border-left: none; 
   cursor: pointer;
 }
 
@@ -91,12 +88,11 @@ form.example button:hover {
   background: #1a1a1d;
 }
 
-/* Clear floats */
 form.example::after {
   content: "";
   clear: both;
   display: table;
-}
+}  */
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -166,6 +162,26 @@ form.example::after {
    color:yellow;
  }
  /*footer ends here.*/
+
+ /*responsive.*/
+ @media screen and (max-width:993px){
+   .welcome{
+     font-size: 40px;
+     padding:30px;
+   }
+   .card h3{
+     font-size: 20px;
+   }
+   .card p{
+     font-size:15px;
+   }
+   .col ul{
+     font-size:15px;
+   }
+ }
+ /* @media screen and (max-width:767px){
+   
+ } */
 
  
 

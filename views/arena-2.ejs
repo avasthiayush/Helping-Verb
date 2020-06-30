@@ -25,8 +25,8 @@
       </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto" >
-            <li class="nav-item" style="padding:8px; padding-bottom: 0px; padding-top: 0px; margin-left:7px; margin:5px; background-color: #c3073f; text-align: center;">
-              <h1>HV</h1>
+            <li class="nav-item" style="font-weight:bold; padding:8px; padding-bottom: 0px; padding-top: 0px; margin-left:7px; margin:3px; background-color: #c3073f; text-align: center;">
+              <span>HV</span>
             </li>
             <li class="nav-item" > 
               <a class="nav-link" href="./homepage">Home</a>
@@ -48,10 +48,10 @@
     <!-- Main content -->
     <div class="main0">
       <div class="welcome">
-          <span>Welcome to the Arena of Specialists</span>
+          <span>Welcome to the Arena of Specialist</span>
       </div>
 
-      <!-- <div class="forma">
+      <!-- <div class="forma"> 
           <form class="example" action="">
               <input type="text" placeholder="(Under construction)Search by Skills:cpp nodejs reactjs html css mongodb etc." name="search" id="tags">
               <button type="submit"><i class="fa fa-search" style="color:yellow"></i></button>
@@ -65,7 +65,7 @@
             <%if(data.length%4==0){%>
               <%for(let i=0;i<data.length;i+=4){%>
                 <div class="row" data-aos="fade-up">
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i].name%></h3>
@@ -102,7 +102,7 @@
                         </div>
                         </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i+1].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i+1].name%></h3>
@@ -139,7 +139,7 @@
                         </div>
                         </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i+2].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i+2].name%></h3>
@@ -176,7 +176,7 @@
                         </div>
                         </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i+3].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i+3].name%></h3>
@@ -221,7 +221,7 @@
               <%for(let i=0;i<data.length;i+=4){%>
                 <%if(data.length>=i+4){%>
                 <div class="row" data-aos="fade-up">
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                       <div class="card">
                       <img src="https://api.adorable.io/avatars/254/<%=data[i].name%>" alt="1st" style="width:100%">
                       <h3 style="padding-top:5px;"><%=data[i].name%></h3>
@@ -258,7 +258,7 @@
                       </div>
                       </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i+1].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i+1].name%></h3>
@@ -295,7 +295,7 @@
                         </div>
                         </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i+2].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i+2].name%></h3>
@@ -332,7 +332,7 @@
                         </div>
                         </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i+3].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i+3].name%></h3>
@@ -372,7 +372,7 @@
                 </div>
                 <%} else {%>
                   <div class="row" data-aos="fade-up">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="card">
                             <img src="https://api.adorable.io/avatars/254/<%=data[i].name%>" alt="1st" style="width:100%">
                             <h3 style="padding-top:5px;"><%=data[i].name%></h3>
@@ -410,7 +410,7 @@
                             </div>
                     </div>
                   </div>
-                <%}%>  
+                <%}%>   
               <%}%> 
             <%}%>
 
@@ -418,7 +418,7 @@
               <%for(let i=0;i<data.length;i+=4){%>
                 <%if(data.length>=i+4){%>
                 <div class="row" data-aos="fade-up">
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i].name%></h3>
@@ -455,7 +455,7 @@
                         </div>
                         </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i+1].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i+1].name%></h3>
@@ -492,7 +492,7 @@
                         </div>
                         </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i+2].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i+2].name%></h3>
@@ -529,7 +529,7 @@
                         </div>
                         </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i+3].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i+3].name%></h3>
@@ -569,7 +569,7 @@
                 </div>
                 <%} else {%>
                   <div class="row" data-aos="fade-up">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="card">
                             <img src="https://api.adorable.io/avatars/254/<%=data[i].name%>" alt="1st" style="width:100%">
                             <h3 style="padding-top:5px;"><%=data[i].name%></h3>
@@ -606,7 +606,7 @@
                             </div>
                             </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="card">
                             <img src="https://api.adorable.io/avatars/254/<%=data[i+1].name%>" alt="1st" style="width:100%">
                             <h3 style="padding-top:5px;"><%=data[i+1].name%></h3>
@@ -652,7 +652,7 @@
               <%for(let i=0;i<data.length;i+=4){%>
                 <%if(data.length>=i+4){%>
                 <div class="row" data-aos="fade-up">
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i].name%></h3>
@@ -689,7 +689,7 @@
                         </div>
                         </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i+1].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i+1].name%></h3>
@@ -726,7 +726,7 @@
                         </div>
                         </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i+2].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i+2].name%></h3>
@@ -763,7 +763,7 @@
                         </div>
                         </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img src="https://api.adorable.io/avatars/254/<%=data[i+3].name%>" alt="1st" style="width:100%">
                         <h3 style="padding-top:5px;"><%=data[i+3].name%></h3>
@@ -803,7 +803,7 @@
                 </div>
                 <%} else {%>
                   <div class="row" data-aos="fade-up">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="card">
                             <img src="https://api.adorable.io/avatars/254/<%=data[i].name%>" alt="1st" style="width:100%">
                             <h3 style="padding-top:5px;"><%=data[i].name%></h3>
@@ -841,7 +841,7 @@
                             </div>
                     </div>
           
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="card">
                             <img src="https://api.adorable.io/avatars/254/<%=data[i+1].name%>" alt="1st" style="width:100%">
                             <h3 style="padding-top:5px;"><%=data[i+1].name%></h3>
@@ -879,7 +879,7 @@
                             </div>
                     </div>
                   
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="card">
                             <img src="https://api.adorable.io/avatars/254/<%=data[i+2].name%>" alt="1st" style="width:100%">
                             <h3 style="padding-top:5px;"><%=data[i+2].name%></h3>
