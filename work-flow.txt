@@ -57,3 +57,7 @@
 
   # Till the date (20/06/2020) i know how to build responsive pages and i have medium level knowledge
     In backend.
+    
+  # completed Helping-Verb Today (30/06/2020).
+  
+  # This was a nice journey i learned how MERN stack Development works.
