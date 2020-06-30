@@ -85,7 +85,7 @@ color: #e4255e;
   color:grey;
 }
 .card img{
-  height:170px;
+  height:170px; 
   width:170px;
 }
 input[type=text], input[type=password],input[type=submit]{
@@ -198,4 +198,135 @@ input[type=text], input[type=password],input[type=submit]{
  }
  /*footer ends here.*/
 
- 
+ /*responsive.*/
+ @media screen and (max-width:1125px)
+  {
+    .navbar-nav > li{
+      padding-left:12px;
+      padding-right:12px; 
+      margin-left:14%;
+      margin-right:14%;
+      font-size: 22px;
+      font-family: 'Pangolin', cursive;
+    }
+  }
+  @media screen and (max-width:1062px){
+    .contest{
+      font-size:18px;
+    }
+    .contest span h1{
+      font-size:30px;
+    }
+    .card h1{
+      font-size: 18px;
+    }
+    .card ul{
+      font-size: 15px;
+    }
+    .geeks span h1{
+      font-size: 30px;
+    }
+    .Add h1{
+      font-size: 30px;
+    }
+    .forma{
+      padding:10px;
+    }
+    
+    #cn,#cu,#gi,#cd,#bn{
+      width:50%;
+      padding:6px;  
+      font-size: 18px;
+    }
+    #cd{
+      padding:6px;
+    }
+    select option {
+      font-size: 18px;
+      padding:6px;
+    }
+    #cd{
+      padding:8px;
+      margin:10px 0; 
+      font-size: 18px;
+    }
+    #back2Top {
+      width: 25px;
+      line-height: 25px;
+      position: fixed;
+      bottom: 50px;
+      right: 0;
+      font-size: 25px;
+      text-decoration: none;
+    }
+    .seconddiv{
+      margin-top: 15px;
+    }
+  }
+  @media screen and (max-width:767px){
+    .card{
+      margin-top: 20px;
+    }
+    #cn,#cu,#gi,#cd,#bn{
+      width:60%;
+    }
+  }
+  @media screen and (max-width:582px){
+    .card{
+      width:80%;
+      margin-left: 10%;
+    }
+    .navbar-nav .nav-item .nav-link {
+      font-size: 20px;
+      }
+      .card img{
+        height:200px;
+      }
+      input[type=text], input[type=password],input[type=submit]{
+        font-size: 10px;
+      } 
+      #cn,#cu,#gi,#cd,#bn{
+        width:80%;
+        padding:10px;  
+      }
+  }
+  @media screen and (max-width:400px){
+    .geeks span h1{
+      font-size: 24px;
+    }
+    .Add h1{
+      font-size: 24px;
+    }
+    .contest{
+      font-size:16px;
+    }
+    .contest span h1{
+      font-size:24px;
+    }
+    .card h1{
+      font-size: 16px;
+    }
+    .card ul{
+      font-size: 15px;
+    }
+    footer{
+      font-size: 15px;
+    }
+    .card .card1{
+      font-size: 17px;
+    }
+    #cn,#cu,#gi,#cd,#bn{
+      width:90%;
+      padding:8px;  
+    }
+    #back2Top {
+      width: 20px;
+      line-height: 20px;
+      position: fixed;
+      bottom: 60px;
+      right: 0;
+      font-size: 20px;
+      text-decoration: none;
+    }
+  }
+
