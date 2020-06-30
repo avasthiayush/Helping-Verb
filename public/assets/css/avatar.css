@@ -78,7 +78,7 @@ color: #e4255e;
     text-align: center;
     font-size: 20px;
   }
-  input[type=text], select, textarea{
+  input[type=text], input[type=url],select, textarea{
     width: 100%;
     padding: 12px;
     border: 1px solid yellow;
@@ -240,7 +240,7 @@ color: #e4255e;
     label{
       font-size: 13px;
     }
-    input[type=text], select, textarea{
+    input[type=text], input[type=url],select, textarea{
       padding: 8px;
       font-size: 13px;
     }
@@ -318,7 +318,7 @@ color: #e4255e;
       font-size: 15px;
       text-decoration: none;
   }
-  input[type=text], select, textarea{
+  input[type=text],input[type=url], select, textarea{
     padding: 6px;
     font-size: 13px;
   }
