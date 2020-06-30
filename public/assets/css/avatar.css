@@ -42,7 +42,7 @@ color: #e4255e;
   main{
       background-color: #303031;
       color:rgb(173, 171, 171);
-  }
+  } 
   h1{
     color:#F7DC6F;
     padding:15px;
@@ -195,5 +195,123 @@ color: #e4255e;
    }
    /*footer ends here.*/
   
-   
-  
+   /*responsive.*/
+   @media screen and (max-width:1056px){
+     h1{
+       font-size: 30px;
+     }
+     .container{
+       width:80%;
+       margin-left: 10%;
+     }
+   }
+   @media screen and (max-width:770px){
+    h1{
+      font-size: 26px;
+    }
+    h3{
+      font-size: 20px;
+    }
+    h4{
+      font-size: 18px;
+    }
+    p{
+      font-size: 18px;
+    }
+    .s2 a{
+      font-size: 18px;
+    }
+    #butt{ 
+      margin-left: 40%;
+      padding-left:40px;
+      padding-right: 40px;
+    }
+    label{
+      font-size: 13px;
+    }
+    input[type=text], select, textarea{
+      padding: 8px;
+      font-size: 13px;
+    }
+   }
+   @media screen and (max-width:600px){
+    h1{
+      font-size: 20px;
+    }
+    h3{
+      font-size: 18px;
+    }
+    h4{
+      font-size: 15px;
+    }
+    p{
+      font-size: 14px;
+    }
+    .s2 a{
+      font-size: 14px;
+    }
+    #butt{ 
+      margin-top: 10px;
+      margin-left: 0%;
+      padding-left:10px;
+      padding-right: 10px;
+    }
+    footer{
+      font-size: 15px;
+    }
+    #back2Top {
+      width: 25px;
+      line-height: 25px;
+      position: fixed;
+      bottom: 55px;
+      right: 0;
+      font-size: 20px;
+      text-decoration: none;
+  }
+  .navbar-nav .nav-item .nav-link {
+   font-size: 20px;
+    }
+   }
+   @media screen and (max-width:600px){
+    h1{
+      font-size: 18px;
+    }
+    h3{
+      font-size: 15px;
+    }
+    h4{
+      font-size: 13px;
+    }
+    p{
+      font-size: 14px;
+    }
+    .s2 a{
+      font-size: 14px;
+    }
+    
+    #butt{ 
+      margin-top: 10px;
+      margin-left: 0%;
+      padding-top:2px;
+      padding-bottom:2px;
+    }
+    footer{
+      font-size: 12px;
+    }
+    #back2Top {
+      width: 20px;
+      line-height: 20px;
+      position: fixed;
+      bottom: 55px;
+      right: 0;
+      font-size: 15px;
+      text-decoration: none;
+  }
+  input[type=text], select, textarea{
+    padding: 6px;
+    font-size: 13px;
+  }
+  .navbar-nav .nav-item .nav-link {
+   font-size: 16px;
+    }
+   }
