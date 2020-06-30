@@ -1,10 +1,14 @@
 /*Including Express.*/
 let express=require('express');
 
+require('dotenv').config();
 
 /*Firing Express to Include Modules to app.*/
 let app=express();
 
+app.use(express.json());
+
+let port = process.env.PORT || 3000;
 
 /* Including body parser.*/
 let bodyParser = require('body-parser');
@@ -78,7 +82,7 @@ let urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.set('view engine','ejs');
 
 /*Access to static files.*/
-app.use(express.static('./public'));
+app.use(express.static(path.join(__dirname + '/public')));
 
 /*get request for contest page.*/
 app.get('/contest',function(req,res)
@@ -363,8 +367,6 @@ app.post('/addskill',urlencodedParser,function(req,res){
 
 
 
-/*Listening to server.*/
-app.listen(3000);
-
-/*Confirmation of Listening to server.*/
-console.log("You are listening to port:3000");
+app.listen(port,()=>{
+    console.log(`Server is running at http://localhost:${port}`);
+});
