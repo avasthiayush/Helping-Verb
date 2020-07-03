@@ -28,7 +28,7 @@ const { stringify } = require('querystring');
 
 
 /*connect to database.*/
-mongoose.connect('mongodb://helpingverb:sonusir@helpingverb-shard-00-00-lonlm.mongodb.net:27017,helpingverb-shard-00-01-lonlm.mongodb.net:27017,helpingverb-shard-00-02-lonlm.mongodb.net:27017/helpingverb?ssl=true&replicaSet=HelpingVerb-shard-0&authSource=admin&retryWrites=true&w=majority', { useNewUrlParser: true,useUnifiedTopology: true })
+mongoose.connect(process.env.MONGODB, { useNewUrlParser: true,useUnifiedTopology: true })
 
 /*Schema and Models.*/
 
