@@ -8,9 +8,6 @@ Idea of helping-verb is to connect with eachother and pass valuable information 
 
 
 ## How to contribute ???
-Fork [Helping-Verb-Test](https://github.com/maskmanlucifer/Helping-Verb-Test) repo instead of the repo you are standing on <br>
-Because this repo is directly attached to Heruko so any changes in this repo will be visible instantaneously.<br>
-# So
 ### 1.Install all dependencies mentioned in package.json file.
 ### 2.For testing model create your own data-base based on schemas given in server.js file.
 ### 3.Add new features or remove bugs, test your changes on helping-verb-test repo and after being assure send a PR to this main repo.
