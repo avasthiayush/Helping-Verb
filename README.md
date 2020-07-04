@@ -1,5 +1,5 @@
 # Helping-Verb
-This is a simple website which brings Developers and Coders of IET Lucknow togather.
+This is a simple website which brings Developers and Coders of IET Lucknow together.
 
 Working model can be tested live <a href="https://helping-verb.herokuapp.com/homepage" target="_blank">here</a>.
 <br>
