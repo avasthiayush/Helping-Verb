@@ -1,0 +1,249 @@
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+} 
+/*body style.*/
+body {
+    background-color: #1a1a1d;
+    font-family: 'Pangolin', cursive;
+}
+
+/*header style.*/
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+  margin-left:14%;
+  margin-right:14%;
+  font-size: 22px;
+  font-family: 'Pangolin', cursive;
+}
+.navbar-nav .nav-item .nav-link {
+  color:yellow;
+  text-align: center;
+}
+.custom-toggler.navbar-toggler {  
+  border-color: yellow;
+  color:white;
+} 
+.custom-toggler .navbar-toggler-icon { 
+  background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
+.navbar-custom { 
+    background-color: #000;  
+} 
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+  color: #e4255e;
+}
+/*header style ends here.*/
+.issue{
+    text-align: center;
+    padding:20px;
+    color:rgb(173, 171, 171);
+    margin:16px 8%;
+    border:2px solid #F7DC6F; 
+    border-radius: 25px;
+    background-color: #283747;
+  }
+  .resolve{
+      
+    text-align: center;
+    padding:20px;
+    color:rgb(173, 171, 171);
+    margin:20px 8%;
+    margin-top:60px;
+    border:2px solid #F7DC6F; 
+    border-radius: 25px;
+    background-color: #283747;
+  }
+main img{
+    width:100%;
+    border-radius: 25px;
+    padding:5px;
+}
+main p{
+    text-align: center;
+    color:rgb(173, 170, 170);
+    font-size: 20px;
+    padding:5px;
+}
+main h1,h2{
+    text-align: center;
+    color:rgb(236, 236, 29);
+    padding:20px;
+    font-size: 30px;
+}
+main h3{
+    text-align: center;
+    color:rgb(236, 236, 29);
+    padding:10px;
+    font-size: 25px;
+}
+
+  #back2Top {
+    width: 35px;
+    line-height: 35px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: yellow;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #c3073f;
+    color: #000;
+}
+  /*main content ends here.*/
+
+  /*footer.*/
+   footer{
+    background:#000;
+    padding: 9px;
+    padding-bottom: 4px;
+    font-size: 17px;
+    text-align: center;
+    color:grey;
+   }
+   .fid{
+     padding:6px;
+   }
+   #copy {
+     color:yellow;
+   }
+   /*footer ends here.*/
+
+   
+  /*responsive code.*/
+  @media screen and (max-width:1125px)
+ {
+    .navbar-nav > li{
+      padding-left:12px;
+      padding-right:12px;
+      margin-left:14%;
+      margin-right:14%;
+      font-size: 22px;
+      font-family: 'Pangolin', cursive;
+    }
+ }
+ @media screen and (max-width:750px){
+    .resolve  h2{
+    font-size: 25px;
+  }
+  .resolve  h3{
+      font-size: 21px;
+  }
+  .resolve  p{
+    font-size: 17px;
+  }
+  .issue  h2{
+    font-size: 25px;
+  }
+  main h1{
+      font-size: 19px;
+  }
+  .issue  h3{
+      font-size: 21px;
+  }
+  .issue  p{
+    font-size: 17px;
+  }
+ }
+ @media screen and (max-width:500px){
+  .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    }
+ }
+ @media screen and (max-width:430px){
+  .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    }
+    #back2Top {
+      width: 25px;
+      line-height: 25px;
+      position: fixed;
+      bottom: 60px;
+      right: 0;
+      font-size: 22px;
+    }
+    
+    .resolve{
+      width:85%;
+      margin-left: 7.5%;
+   }
+   .resolve h2{
+     font-size: 20px;
+   }
+   .issue{
+    width:85%;
+    margin-left: 7.5%;
+ }
+ .issue h2{
+   font-size: 20px;
+ }
+   footer{
+     font-size: 15px;
+   }
+ }
+ @media screen and (max-width:430px){
+  .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    }
+ }
+ @media screen and (max-width:430px){
+  .navbar-nav .nav-item .nav-link {
+    font-size: 15px;
+    }
+    #back2Top {
+      width: 17px;
+      line-height: 17px;
+      position: fixed;
+      bottom: 60px;
+      right: 0;
+      font-size: 17px;
+    }
+    .resolve{
+      width:90%;
+      margin-left: 5%;
+    }
+   .resolve p{
+    font-size: 14px;
+  }
+  .resolve h2{
+     font-size: 17px;
+   }
+   .resolve h3{
+    font-weight: 15px;
+   }
+   .issue{
+    width:90%;
+    margin-left: 5%;
+  }
+ .issue p{
+  font-size: 14px;
+}
+.issue h2{
+   font-size: 17px;
+ }
+ main h1{
+     font-size: 21px;
+ }
+ .issue h3{
+  font-weight: 15px;
+ }
+   footer{
+     font-size: 14px;
+   }
+ }

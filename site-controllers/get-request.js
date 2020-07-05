@@ -102,6 +102,11 @@ module.exports =  function(app)
     {
         res.render('profile');
     });
+
+    app.get('/contribute',function(req,res)
+    {
+        res.render('contribute');
+    });
     
     app.get('/avatar',function(req,res)
     {
