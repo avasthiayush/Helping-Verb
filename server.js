@@ -30,50 +30,17 @@ const { stringify } = require('querystring');
 /*connect to database.*/
 mongoose.connect(process.env.MONGODB, { useNewUrlParser: true,useUnifiedTopology: true })
 
-/*Schema and Models.*/
+/*models importing.*/
+let Profile= require('./models/profile-model');
 
- /*Schema for contest.*/
-let Byschema=new mongoose.Schema({
-    ctype:String,
-    cname:Array,
-    curl:Array,
- });
-
- /*Schema for profile.*/
- let Myschema=new mongoose.Schema({
-    name:String,
-    arenaid:String,
-    clink:String,
-    glink:String,
-    skills:Array
- });
-
- /*Arana ID schema.*/
- let Zyschema=new mongoose.Schema({
-    id:String,
- });
- 
-/*Arena id model.*/
- let Arenaid=mongoose.model('Arenaid',Zyschema);
-
- /*profile models.*/
- let First=mongoose.model('First',Myschema);
-
- let Second=mongoose.model('Second',Myschema);
-
- let Third=mongoose.model('Third',Myschema);
-
- let Final=mongoose.model('Final',Myschema);
-
- /* Creating model for blueprint.*/
- let Contest=mongoose.model('Contest',Byschema);
-
- /*schema and model end.*/
+let Contest= require('./models/contest-model');
 
  /*method override including.*/
  app.use(methodOverride('_method'));
 
  mongoose.set('useFindAndModify', false);
+
+ let Controller=require('./site-controllers/get-request');
 
 /*Firing urlpareser.*/
 let urlencodedParser = bodyParser.urlencoded({ extended: false });
@@ -84,98 +51,7 @@ app.set('view engine','ejs');
 /*Access to static files.*/
 app.use(express.static(path.join(__dirname + '/public')));
 
-/*get request for contest page.*/
-app.get('/contest',function(req,res)
-{
-    Contest.find({},function(err,data)
-    {
-        if(err)
-        {
-            process.exit(1);
-        }
-        res.render('contest',{data:data});
-    })
-});
-
-/*get request for home page.*/
-app.get('/',function(req,res)
-{
-    res.render('homepage');
-});
-
-
-app.get('/arena-1',function(req,res)
-{
-    First.find({},function(err,data)
-    {
-        if(err)
-        {
-            process.exit(1);
-        }
-        res.render('arena-1',{data:data});
-    })
-});
-
-app.get('/arena-2',function(req,res)
-{
-    Second.find({},function(err,data)
-    {
-        if(err)
-        {
-            process.exit(1);
-        }
-        res.render('arena-2',{data:data});
-    })
-});
-
-app.get('/arena-3',function(req,res)
-{
-    Third.find({},function(err,data)
-    {
-        if(err)
-        {
-            process.exit(1);
-        }
-        res.render('arena-3',{data:data});
-    })
-});
-
-app.get('/arena-4',function(req,res)
-{
-    Final.find({},function(err,data)
-    {
-        if(err)
-        {
-            process.exit(1);
-        }
-        res.render('arena-4',{data:data});
-    })
-});
-
-app.get('/profile',function(req,res)
-{
-    res.render('profile');
-});
-
-app.get('/avatar',function(req,res)
-{
-    res.render('avatar');
-});
-
-app.get('/about',function(req,res)
-{
-    res.render('about');
-});
-
-app.get('/test',function(req,res)
-{
-    res.render('test');
-});
-
-app.get('/homepage',function(req,res)
-{
-    res.render('homepage');
-});
+Controller(app);
 
 /*All post request.*/
 app.post('/update/general',urlencodedParser,function(req,res){
@@ -194,7 +70,7 @@ app.post('/update/general',urlencodedParser,function(req,res){
         }
         if(req.body.yr==1)
         {
-        First.findOneAndUpdate({arenaid:req.body.pass},
+        Profile.First.findOneAndUpdate({arenaid:req.body.pass},
         aman,
         function(err, docs)
         {
@@ -210,7 +86,7 @@ app.post('/update/general',urlencodedParser,function(req,res){
        }
        else if(req.body.yr==2)
        {
-       Second.findOneAndUpdate({arenaid:req.body.pass},
+       Profile.Second.findOneAndUpdate({arenaid:req.body.pass},
        aman,
        function(err, docs)
        {
@@ -228,7 +104,7 @@ app.post('/update/general',urlencodedParser,function(req,res){
       }
       else if(req.body.yr==3)
       {
-      Third.findOneAndUpdate({arenaid:req.body.pass},
+      Profile.Third.findOneAndUpdate({arenaid:req.body.pass},
       aman,
       function(err, docs)
       {
@@ -245,7 +121,7 @@ app.post('/update/general',urlencodedParser,function(req,res){
      }
      else if(req.body.yr==4)
      {
-     Final.findOneAndUpdate({arenaid:req.body.pass},
+     Profile.Final.findOneAndUpdate({arenaid:req.body.pass},
      aman,
      function(err, docs)
      {
@@ -287,7 +163,7 @@ app.post('/addcontest',urlencodedParser,function(req,res){
 app.post('/addskill',urlencodedParser,function(req,res){
     if(req.body.yr==1)
     {
-    First.findOneAndUpdate({arenaid:req.body.pass},
+    Profile.First.findOneAndUpdate({arenaid:req.body.pass},
     {
         $push: {skills:req.body.skill}
     },
@@ -307,7 +183,7 @@ app.post('/addskill',urlencodedParser,function(req,res){
    }
    else if(req.body.yr==2)
    {
-   Second.findOneAndUpdate({arenaid:req.body.pass},
+   Profile.Second.findOneAndUpdate({arenaid:req.body.pass},
    {
        $push: {skills:req.body.skill}
    },
@@ -326,7 +202,7 @@ app.post('/addskill',urlencodedParser,function(req,res){
   }
   else if(req.body.yr==3)
   {
-  Third.findOneAndUpdate({arenaid:req.body.pass},
+  Profile.Third.findOneAndUpdate({arenaid:req.body.pass},
   {
       $push: {skills:req.body.skill}
   },
@@ -345,7 +221,7 @@ app.post('/addskill',urlencodedParser,function(req,res){
  }
  else if(req.body.yr==4)
  {
- Final.findOneAndUpdate({arenaid:req.body.pass},
+ Profile.Final.findOneAndUpdate({arenaid:req.body.pass},
  {
      $push: {skills:req.body.skill}
  },
