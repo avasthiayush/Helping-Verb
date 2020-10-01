@@ -8,6 +8,13 @@ body {
   background-color: #1a1a1d;
   font-family: 'Pangolin', cursive;
 }
+img{
+   width:80%;
+   border:5px solid black;
+   border-radius:50%;
+   margin-top:13px;
+   margin-left:10px;
+}
 
 /*header style.*/
 .navbar-nav > li{
@@ -99,6 +106,7 @@ form.example::after {
   max-width: 300px;
   margin: auto;
   text-align: center;
+  justify-content: space-evenly;
 }
 .row{
   margin-top: 30px;
